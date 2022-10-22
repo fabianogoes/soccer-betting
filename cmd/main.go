@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 	"world-cup/framework/web"
+	"world-cup/framework/web/handler"
 )
 
 func main() {
@@ -11,8 +12,11 @@ func main() {
 	log.Println("Setup Application...")
 
 	// Setup Web Api
-	router := web.NewApiHandler()
-	srv := web.SetupHTTPServer(router)
+	srv := web.SetupHTTPServer(
+		handler.NewHealthApiHandler(),
+		handler.NewUserApiHandler(),
+	)
+
 	if err := srv.ListenAndServe(); err != nil {
 		log.Fatalf("Error something went wrong starting http server: %s", err)
 	}

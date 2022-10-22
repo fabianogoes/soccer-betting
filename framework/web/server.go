@@ -18,6 +18,7 @@ func SetupHTTPServer(routers ...Router) *http.Server {
 	config := domain.NewConfiguration()
 	logger := logging.NewLogger()
 
+	gin.ForceConsoleColor()
 	r := gin.Default()
 
 	for _, handler := range routers {
