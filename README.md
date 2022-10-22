@@ -6,9 +6,12 @@
 
 ## Stack
 - [Golang](https://go.dev/)
+- [Zap Logger](https://github.com/uber-go/zap)
 - [Gin Web Framework](https://gin-gonic.com/)
 - [Database ???]()
 
 ## Setup development
-- [Setup Golang](https://www.practical-go-lessons.com/chap-4-setup-your-dev-environment)
-- [Setup Database ???]()
+- [x] [Setup Golang](https://www.practical-go-lessons.com/chap-4-setup-your-dev-environment)
+- [x] [Setup Web API](https://gin-gonic.com/docs/) 
+- [x] [Setup Logger](https://github.com/uber-go/zap)
+- [ ] [Setup Database ???]()
