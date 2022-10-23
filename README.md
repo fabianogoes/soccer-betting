@@ -31,3 +31,5 @@
 ## References
 - [How to Setup Golang GORM RESTful API Project with Postgres](https://codevoweb.com/setup-golang-gorm-restful-api-project-with-postgres)
 - [World Cup Qatar 2022](https://www.fifa.com/fifaplus/en/articles/qatar-2022-all-qualified-teams-groups-dates-match-schedule-tickets-more)
+- [Database Handling with Golang Gorm (CRUD Handling)](https://dev.to/yanoandri/database-handling-with-golang-gorm-crud-handling-4c66)
+- [Qatar horarios fase de grupos](https://www.jogosdacopa.net/#/qatar-horarios-fase-de-grupos)
