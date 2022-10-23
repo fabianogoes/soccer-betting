@@ -1,13 +1,14 @@
 version: '3'
 services:
   postgres:
-    image: "postgres"
-    environment:
-      - POSTGRES_USER=worldcup_user
-      - POSTGRES_PASSWORD=worldcup_pwd
-      - POSTGRES_DB=worldcup_db
+    image: postgres
+    container_name: postgres
     ports:
-      - "5432:5432"
+      - 5432:5432
+    # env_file:
+      # - ./development.env
+    volumes:
+      - postgres:/var/lib/postgresql/data
       
   pgadmin-compose:
     image: dpage/pgadmin4
@@ -18,3 +19,6 @@ services:
       - "54321:80"
     depends_on:
       - postgres
+
+volumes:
+  postgres:

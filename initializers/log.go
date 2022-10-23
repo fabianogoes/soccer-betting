@@ -1,8 +1,7 @@
-package logging
+package initializers
 
 import (
 	defaultLog "log"
-	"world-cup/domain"
 
 	"os"
 	"strings"
@@ -11,8 +10,8 @@ import (
 	"go.uber.org/zap/zapcore"
 )
 
-func NewLogger() *zap.SugaredLogger {
-	log, err := newLogger(domain.NewConfiguration().Enviroment)
+func SetupLogger(config *Config) *zap.SugaredLogger {
+	log, err := newLogger(config.Enviroment)
 	if err != nil {
 		defaultLog.Fatalf("failure to initialize logger: %v", err)
 	}

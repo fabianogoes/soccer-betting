@@ -2,23 +2,24 @@ package main
 
 import (
 	"log"
-	db "world-cup/framework/database/postgres"
-	"world-cup/framework/web"
-	"world-cup/framework/web/handler"
+	"world-cup/controllers"
+	"world-cup/initializers"
 )
 
 func main() {
 	// ctx := context.Background()
 
 	log.Println("Setup Application...")
+	config, _ := initializers.LoadConfig(".")
 
 	// Setup Database: Postgres
-	db.Setup()
+	initializers.SetupPostgres(&config)
 
 	// Setup Web Api
-	srv := web.SetupHTTPServer(
-		handler.NewHealthApiHandler(),
-		handler.NewUserApiHandler(),
+	srv := initializers.SetupHTTPServer(
+		&config,
+		controllers.NewHealthApiHandler(),
+		controllers.NewUserApiHandler(),
 	)
 
 	if err := srv.ListenAndServe(); err != nil {
