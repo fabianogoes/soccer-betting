@@ -1,0 +1,20 @@
+version: '3'
+services:
+  postgres:
+    image: "postgres"
+    environment:
+      - POSTGRES_USER=worldcup_user
+      - POSTGRES_PASSWORD=worldcup_pwd
+      - POSTGRES_DB=worldcup_db
+    ports:
+      - "5432:5432"
+      
+  pgadmin-compose:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "dev@dev.com"
+      PGADMIN_DEFAULT_PASSWORD: "123"
+    ports:
+      - "54321:80"
+    depends_on:
+      - postgres
