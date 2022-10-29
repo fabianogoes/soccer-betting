@@ -1,64 +1,43 @@
-package controllers
+package api
 
 import (
 	"fmt"
 	"net/http"
+	"world-cup/api/dto"
+	"world-cup/domain/usecases"
 
 	"github.com/gin-gonic/gin"
 	uuid "github.com/satori/go.uuid"
 )
 
-type UserRequest struct {
-	Name  string `json:"name"`
-	Email string `json:"email"`
-}
-
-type UserResponse struct {
-	ID    string `json:"id"`
-	Name  string `json:"name"`
-	Email string `json:"email"`
-	Token string `json:"token"`
-}
-
-var UsersResponseMock []UserResponse
+var UsersResponseMock []dto.UserResponse
 
 type UserApiHandler struct {
-	// create CreateUserUseCase
-	// read   ReadUserUseCase
-	// update UpdateUserUseCase
-	// delete DeleteUserUseCase
+	UseCase *usecases.UserUseCase
 }
 
 func NewUserApiHandler(
-// c CreateUserUseCase
-// r ReadUserUseCase
-// u UpdateUserUseCase
-// d DeleteUserUseCase
+	useCase *usecases.UserUseCase,
 ) UserApiHandler {
-	UsersResponseMock = []UserResponse{
+	UsersResponseMock = []dto.UserResponse{
 		{ID: uuid.NewV4().String(), Name: "User Mock 1", Email: "usermock1@gmail.com", Token: uuid.NewV4().String()},
 		{ID: uuid.NewV4().String(), Name: "User Mock 2", Email: "usermock2@gmail.com", Token: uuid.NewV4().String()},
 		{ID: uuid.NewV4().String(), Name: "User Mock 2", Email: "usermock3@gmail.com", Token: uuid.NewV4().String()},
 	}
 
-	return UserApiHandler{
-		// create: c
-		// read: r
-		// update: u
-		// delete: d
-	}
+	return UserApiHandler{UseCase: useCase}
 }
 
 func (h UserApiHandler) Routes(router *gin.Engine) {
 	router.POST("/users", h.create)
-	router.GET("/users", h.readAll)
-	router.GET("/users/:id", h.read)
+	router.GET("/users", h.findAll)
+	router.GET("/users/:id", h.findById)
 	router.PUT("/users/:id", h.update)
 	router.DELETE("/users/:id", h.delete)
 }
 
 func (h UserApiHandler) create(c *gin.Context) {
-	var request UserRequest
+	var request dto.UserRequest
 	c.Bind(&request)
 
 	response := h.buildUserResponse(
@@ -73,27 +52,28 @@ func (h UserApiHandler) create(c *gin.Context) {
 	c.JSONP(http.StatusCreated, response)
 }
 
-func (h UserApiHandler) readAll(c *gin.Context) {
-	c.JSONP(http.StatusOK, UsersResponseMock)
+func (h UserApiHandler) findAll(c *gin.Context) {
+	response := dto.ToListOfUserResponse(*h.UseCase.FindAll())
+	c.JSONP(http.StatusOK, response)
 }
 
-func (h UserApiHandler) read(c *gin.Context) {
+func (h UserApiHandler) findById(c *gin.Context) {
 	id := c.Params.ByName("id")
 
-	for _, item := range UsersResponseMock {
-		if item.ID == id {
-			c.JSONP(http.StatusOK, item)
-			return
-		}
+	err, user := h.UseCase.FindById(id)
+	if err != nil {
+		c.JSON(http.StatusNotFound, gin.H{"message": fmt.Sprintf("User not found with id: %s", id)})
+		return
 	}
 
-	c.JSON(http.StatusNotFound, gin.H{"message": fmt.Sprintf("User not found with id: %s", id)})
+	response := dto.ToUserResponse(*user)
+	c.JSONP(http.StatusOK, response)
 }
 
 func (h UserApiHandler) update(c *gin.Context) {
 	id := c.Params.ByName("id")
 
-	var request UserRequest
+	var request dto.UserRequest
 	c.Bind(&request)
 
 	response := h.buildUserResponse(
@@ -119,8 +99,8 @@ func (h UserApiHandler) delete(c *gin.Context) {
 
 // functions to Mock
 
-func (h UserApiHandler) buildUserResponse(id string, name string, email string, token string) UserResponse {
-	return UserResponse{
+func (h UserApiHandler) buildUserResponse(id string, name string, email string, token string) dto.UserResponse {
+	return dto.UserResponse{
 		ID:    id,
 		Name:  name,
 		Email: email,
@@ -139,7 +119,7 @@ func (h UserApiHandler) existMock(id string) bool {
 }
 
 func (h UserApiHandler) deleteMock(id string) {
-	var newList = make([]UserResponse, len(UsersResponseMock)-1)
+	var newList = make([]dto.UserResponse, len(UsersResponseMock)-1)
 	var newIndex = 0
 	for _, item := range UsersResponseMock {
 		if item.ID != id {
