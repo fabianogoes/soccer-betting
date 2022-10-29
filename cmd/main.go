@@ -3,28 +3,28 @@ package main
 import (
 	"log"
 	"world-cup/api"
+	"world-cup/configuration"
 	"world-cup/domain/usecases"
-	"world-cup/initializers"
 )
 
 func main() {
 	// ctx := context.Background()
 
 	log.Println("Load Configurations...")
-	config, _ := initializers.LoadConfig(".")
+	config, _ := configuration.LoadConfig(".")
 
 	// Setup Database: Postgres
 	log.Println("Setup Postgress...")
-	initializers.SetupPostgres(&config)
+	configuration.SetupPostgres(&config)
 
 	// Dependency Injection
-	userUseCase := usecases.NewUserUseCase(initializers.DB)
-	teamUseCase := usecases.NewTeamUseCase(initializers.DB)
-	matchUseCase := usecases.NewMatchUseCase(initializers.DB)
+	userUseCase := usecases.NewUserUseCase(configuration.DB)
+	teamUseCase := usecases.NewTeamUseCase(configuration.DB)
+	matchUseCase := usecases.NewMatchUseCase(configuration.DB)
 
 	// Setup Web Api
 	log.Println("Setup Web API...")
-	srv := initializers.SetupHTTPServer(
+	srv := configuration.SetupHTTPServer(
 		&config,
 		api.NewHealthApiHandler(),
 		api.NewUserApiHandler(userUseCase),

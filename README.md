@@ -4,6 +4,14 @@
 
 > ℹ️ This project was created as a study base for the Go language and its main frameworks and libraries. It's an open source project, so feel free to participate with ideas and code by creating issues and submitting pull requests.
 
+- [⚽️ World Cup](#️-world-cup)
+  - [Stack](#stack)
+  - [Create and configuration project](#create-and-configuration-project)
+  - [Setup development](#setup-development)
+  - [Structure](#structure)
+  - [References](#references)
+
+
 ## Stack
 - [Golang](https://go.dev/)
 - [Zap Logger](https://github.com/uber-go/zap)
@@ -27,6 +35,17 @@
 - Download dependency `world-cup`
 - Let's Code!
 
+## Structure
+
+```
+api/ - handlers, routers
+|-dto - request models, response models 
+cmd/ - bootstrap application
+domain/
+|-models - Domain classes(entitites...)
+|-usecases - Business rules
+configuration/ - Frameworks and lib settings: database, loading environments variables, logging, web server, etc...
+```
 
 ## References
 - [How to Setup Golang GORM RESTful API Project with Postgres](https://codevoweb.com/setup-golang-gorm-restful-api-project-with-postgres)
