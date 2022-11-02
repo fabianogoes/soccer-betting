@@ -3,11 +3,11 @@ package models
 import (
 	"time"
 
-	"github.com/google/uuid"
+	"gorm.io/gorm"
 )
 
 type Match struct {
-	BaseModel
+	gorm.Model
 	TeamA    Team
 	TeamAID  string `gorm:"index:idx_teams_schedule,unique"`
 	TeamB    Team
@@ -16,7 +16,5 @@ type Match struct {
 }
 
 func NewMatch(teamA Team, teamB Team, schedule time.Time) *Match {
-	match := &Match{TeamA: teamA, TeamB: teamB, Schedule: schedule}
-	match.ID = uuid.New().String()
-	return match
+	return &Match{TeamA: teamA, TeamB: teamB, Schedule: schedule}
 }

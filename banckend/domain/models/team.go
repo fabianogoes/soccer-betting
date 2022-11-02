@@ -3,11 +3,11 @@ package models
 import (
 	"fmt"
 
-	"github.com/google/uuid"
+	"gorm.io/gorm"
 )
 
 type Team struct {
-	BaseModel
+	gorm.Model
 	Name         string `gorm:"type:varchar(255);not null"`
 	Group        string `gorm:"type:char(1);not null"`
 	NamePTBR     string `gorm:"type:varchar(255);not null"`
@@ -15,9 +15,7 @@ type Team struct {
 }
 
 func NewTeam(group string, name string, namePTBR string, abbr string) *Team {
-	team := &Team{Group: group, Name: name, NamePTBR: namePTBR, Abbreviation: abbr}
-	team.SetID(uuid.New())
-	return team
+	return &Team{Group: group, Name: name, NamePTBR: namePTBR, Abbreviation: abbr}
 }
 
 func (t *Team) ToString() string {

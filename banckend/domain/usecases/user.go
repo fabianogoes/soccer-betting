@@ -23,14 +23,14 @@ func (uc *UserUseCase) FindAll() *[]models.User {
 	return &allUsers
 }
 
-func (uc *UserUseCase) FindById(id string) (error, *models.User) {
+func (uc *UserUseCase) FindById(id uint) (*models.User, error) {
 	var user models.User
 
 	result := uc.DB.Where("id = ?", id).First(&user)
 	if result.RowsAffected == 0 {
-		return result.Error, nil
+		return nil, result.Error
 	}
 
 	fmt.Println("User found")
-	return nil, &user
+	return &user, nil
 }

@@ -5,10 +5,11 @@ import (
 
 	"github.com/google/uuid"
 	"golang.org/x/crypto/bcrypt"
+	"gorm.io/gorm"
 )
 
 type User struct {
-	BaseModel
+	gorm.Model
 	Name     string `gorm:"type:varchar(255);not null"`
 	Email    string `gorm:"type:varchar(255);uniqueIndex;not null"`
 	Password string
@@ -17,7 +18,6 @@ type User struct {
 
 func NewUser(name string, email string, password string) *User {
 	user := &User{Name: name, Email: email, Password: password}
-	user.SetID(uuid.New())
 	user.Prepare()
 	return user
 }

@@ -8,7 +8,7 @@ type UserRequest struct {
 }
 
 type UserResponse struct {
-	ID    string `json:"id"`
+	ID    uint   `json:"id"`
 	Name  string `json:"name"`
 	Email string `json:"email"`
 	Token string `json:"token"`
@@ -18,7 +18,7 @@ func ToListOfUserResponse(users []models.User) []UserResponse {
 	var result []UserResponse
 
 	for _, user := range users {
-		r := UserResponse{ID: user.ID, Name: user.Name, Email: user.Email, Token: user.Token}
+		r := UserResponse{ID: user.Model.ID, Name: user.Name, Email: user.Email, Token: user.Token}
 		result = append(result, r)
 	}
 
