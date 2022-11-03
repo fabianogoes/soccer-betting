@@ -1,33 +1,35 @@
-# World Cup (world-cup-frontend)
+# worldcup-frontend
 
-World Cup UI
-
-## Install the dependencies
-```bash
-yarn
-# or
+## Project setup
+```
 npm install
 ```
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-```bash
-quasar dev
+### Compiles and hot-reloads for development
+```
+npm run serve
 ```
 
+### Compiles and minifies for production
+```
+npm run build
+```
 
-### Lint the files
-```bash
-yarn lint
-# or
+### Lints and fixes files
+```
 npm run lint
 ```
 
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
-### Build the app for production
+### Reference Instalation Dependency
+
 ```bash
-quasar build
+npm i -g @vue/cli
+npm i bootstrap
+npm i @popperjs/core
+npm i --save-dev @fortawesome/fontawesome-free
+npm i --save axios vue-axios
 ```
-
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).

@@ -23,7 +23,7 @@ secret.md
 ## Front Vue
 .DS_Store
 .thumbs.db
-node_modules
+/frontend/node_modules
 
 # Quasar core related directories
 .quasar
