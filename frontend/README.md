@@ -2,6 +2,9 @@
 
 - [Soccer Betting - Frontend](#soccer-betting---frontend)
   - [Stack](#stack)
+  - [Json Server Mock Backend](#json-server-mock-backend)
+    - [Json Server usando `yarn`](#json-server-usando-yarn)
+    - [Json Server usando `npm`](#json-server-usando-npm)
   - [Visual Studio Code](#visual-studio-code)
     - [Theme](#theme)
     - [Extensions](#extensions)
@@ -17,6 +20,23 @@
 - [TypeScript](https://www.typescriptlang.org/docs/)
 - [Material UI](https://mui.com/material-ui/getting-started/overview/)
 - [Json Server](https://github.com/typicode/json-server)
+
+## Json Server Mock Backend
+
+Para usar um backend mockado
+
+### Json Server usando `yarn`
+
+```bash
+yarn run json-server -w -p 3333 ./mock/database.json
+```
+
+### Json Server usando `npm`
+
+```bash
+npm run json-server -w -p 3333 ./mock/database.json
+```
+
 
 ## Visual Studio Code
 
