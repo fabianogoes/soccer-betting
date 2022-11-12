@@ -2,7 +2,7 @@ import { Avatar, Divider, Drawer, Icon, List, ListItemButton, ListItemIcon, List
 import { useMatch, useNavigate, useResolvedPath } from 'react-router-dom'
 import { Box } from '@mui/system'
 
-import { useDrawerContext } from '../../contexts'
+import { useAppThemeContext, useDrawerContext } from '../../contexts'
 
 type Props = {
   children: React.ReactNode
@@ -42,6 +42,7 @@ export const SideBar: React.FC<Props> = ({ children }) => {
   const smDown = useMediaQuery(theme.breakpoints.down('sm'))
 
   const { isDrawerOpen, drawerOptions, toggleDrawerOpen } = useDrawerContext()
+  const { toggleTheme } = useAppThemeContext()
 
   return (
     <>
@@ -71,7 +72,18 @@ export const SideBar: React.FC<Props> = ({ children }) => {
             </List>
           </Box>
 
-        </Box>
+          <Box>
+            <List component="nav">
+              <ListItemButton onClick={toggleTheme}>
+                <ListItemIcon>
+                  <Icon>dark_mode</Icon>
+                </ListItemIcon>
+                <ListItemText primary="Alternar tema" />
+              </ListItemButton>
+            </List>
+          </Box>
+
+        </Box>        
       </Drawer>
 
       <Box height="100vh" marginLeft={smDown ? 0 : theme.spacing(28)}>
