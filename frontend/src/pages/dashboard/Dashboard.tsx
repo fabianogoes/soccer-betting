@@ -8,7 +8,7 @@ export const Dashboard = () => {
     <LayoutBasePage 
       title='Dashboard' 
       toolsBar={(
-        <DetailTools />
+        <DetailTools showSaveAndBackButton />
       )}
     >
       <ListingTools 

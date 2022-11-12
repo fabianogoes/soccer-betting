@@ -3,17 +3,17 @@ import { Box, Button, Icon, Paper, TextField, useTheme } from '@mui/material'
 interface IListingToolsProps {
   searchText?: string
   showSearchInput?: boolean
-  whenChangingSearchText?: (newText: string) => void
+  onChangingSearchText?: (newText: string) => void
   textNewButton?: string
   showNewButton?: boolean
-  whenClickNew?: () => void
+  onNewButtonClick?: () => void
 }
 
 export const ListingTools: React.FC<IListingToolsProps> = ({
   searchText = '',
-  whenChangingSearchText,
+  onChangingSearchText,
   showSearchInput = false,
-  whenClickNew,
+  onNewButtonClick,
   textNewButton = 'Novo',
   showNewButton = true,
 }) => {
@@ -35,7 +35,7 @@ export const ListingTools: React.FC<IListingToolsProps> = ({
           size="small"
           value={searchText}
           placeholder='Pesquisar...'
-          onChange={(e) => whenChangingSearchText?.(e.target.value)}
+          onChange={(e) => onChangingSearchText?.(e.target.value)}
         />
       )}
 
@@ -45,7 +45,7 @@ export const ListingTools: React.FC<IListingToolsProps> = ({
             color='primary'
             disableElevation
             variant='contained'
-            onClick={whenClickNew}
+            onClick={onNewButtonClick}
             endIcon={<Icon>add</Icon>}
           >{textNewButton}</Button>
         )}
