@@ -1,6 +1,6 @@
-# Soccer Betting - Frontend
+# ⚽️ Soccer Betting - Frontend
 
-- [Soccer Betting - Frontend](#soccer-betting---frontend)
+- [⚽️ Soccer Betting - Frontend](#️-soccer-betting---frontend)
   - [Stack](#stack)
   - [Json Server Mock Backend](#json-server-mock-backend)
     - [Json Server usando `yarn`](#json-server-usando-yarn)
