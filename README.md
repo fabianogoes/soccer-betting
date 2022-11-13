@@ -18,7 +18,7 @@
 - [ReactJS | Frontend](./banckend/README.md)
 
 ## Run
-> [ ] TODO: criar um Makefile
+- [ ] TODO: create a Makefile
 
 ### Dependencias
 - [Setup Golang](https://www.practical-go-lessons.com/chap-4-setup-your-dev-environment)
