@@ -1,7 +1,7 @@
 # ⚽️ Soccer Betting - Backend
-<img src="../assets/badge-golang.png" width="60" height="100" />
-<img src="../assets/badge-postgres.png" width="60" height="100" />
-<img src="../assets/badge-gingonic.png" width="60" height="100" />
+![Golang](../assets/badge-golang.png)
+![Postgres](../assets/badge-postgres.png)
+![Gin](../assets/badge-gingonic.png)
 
 > ℹ️ This project was created as a study base for the Go language and its main frameworks and libraries. It's an open source project, so feel free to participate with ideas and code by creating issues and submitting pull requests.
 

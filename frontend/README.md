@@ -1,8 +1,8 @@
 # ⚽️ Soccer Betting - Frontend
-<img src="../assets/badge-react.png" width="60" height="100" />
-<img src="../assets/badge-typescript.png" width="60" height="100" />
-<img src="../assets/badge-vite.png" width="60" height="100" />
-<img src="../assets/badge-materialui.png" width="60" height="100" />
+![React](../assets/badge-react.png)
+![TypeScript](../assets/badge-typescript.png)
+![Vite](../assets/badge-vite.png)
+![Material UI](../assets/badge-materialui.png)
 
 - [⚽️ Soccer Betting - Frontend](#️-soccer-betting---frontend)
   - [Stack](#stack)
