@@ -2,13 +2,13 @@
 
  🎯 This Project is about FIFA World Cup, should be able to manage: Teams, Groups, Matches, Users, Bets, Ranking, Rules, Statistics, etc... 
 
-<img src="./assets/badge-golang.png" width="60" height="100" />
-<img src="./assets/badge-postgres.png" width="60" height="100" />
-<img src="./assets/badge-gingonic.png" width="60" height="100" />
-<img src="./assets/badge-react.png" width="60" height="100" />
-<img src="./assets/badge-typescript.png" width="60" height="100" />
-<img src="./assets/badge-vite.png" width="60" height="100" />
-<img src="./assets/badge-materialui.png" width="60" height="100" />
+![Golang](./assets/badge-golang.png)
+![Postgres](./assets/badge-postgres.png)
+![Gin](./assets/badge-gingonic.png)
+![React](./assets/badge-react.png)
+![TypeScript](./assets/badge-typescript.png)
+![Vite](./assets/badge-vite.png)
+![Material UI](./assets/badge-materialui.png)
 
 > ℹ️ This project was created as a study base for the Go language and its main frameworks and libraries. It's an open source project, so feel free to participate with ideas and code by creating issues and submitting pull requests.
 
