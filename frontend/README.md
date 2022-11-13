@@ -1,10 +1,10 @@
-# ⚽️ Soccer Betting - Frontend
+# Soccer Betting - Frontend
 ![React](../assets/badge-react.png)
 ![TypeScript](../assets/badge-typescript.png)
 ![Vite](../assets/badge-vite.png)
 ![Material UI](../assets/badge-materialui.png)
 
-- [⚽️ Soccer Betting - Frontend](#️-soccer-betting---frontend)
+- [Soccer Betting - Frontend](#soccer-betting---frontend)
   - [Stack](#stack)
   - [Json Server Mock Backend](#json-server-mock-backend)
     - [Json Server usando `yarn`](#json-server-usando-yarn)

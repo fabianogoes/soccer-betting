@@ -1,4 +1,4 @@
-# ⚽️ Soccer Betting
+# Soccer Betting
 
  🎯 This Project is about FIFA World Cup, should be able to manage: Teams, Groups, Matches, Users, Bets, Ranking, Rules, Statistics, etc... 
 
@@ -12,7 +12,7 @@
 
 > ℹ️ This project was created as a study base for the Go language and its main frameworks and libraries. It's an open source project, so feel free to participate with ideas and code by creating issues and submitting pull requests.
 
-- [⚽️ Soccer Betting](#️-soccer-betting)
+- [Soccer Betting](#soccer-betting)
   - [Stack](#stack)
   - [Run](#run)
     - [Dependencias](#dependencias)
