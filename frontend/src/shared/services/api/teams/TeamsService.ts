@@ -43,16 +43,16 @@ const getAll = async (page = 1, filter = ''): Promise<ITeamWithTotalCount | Erro
 
 const getById = async (id: string): Promise<ITeamDetail | Error> => {
   try {
-    const { data } = await Api.get(`/team/${id}`)
+    const { data } = await Api.get(`/teams/${id}`)
 
     if (data) {
       return data
     }
 
-    return new Error(`Erro ao consultar o times: ${id}`)
+    return new Error(`Erro ao consultar o time: ${id}`)
   } catch (error) {
     console.error(error)
-    return new Error((error as {message: string}).message || `Erro ao consultar o usuários: ${id}`)
+    return new Error((error as {message: string}).message || `Erro ao consultar o time: ${id}`)
   }
 }
 
