@@ -23,6 +23,7 @@ type ITeamWithTotalCount = {
 }
 
 const getAll = async (page = 1, filter = ''): Promise<ITeamWithTotalCount | Error> => {
+  console.log(`TeamsService:getAll(page=${page}, filter=${filter})`)
   try {
     const relativeUrl = `/teams?_page=${page}&_limit=${Environment.MAX_LINES}&name${filter}`
     const { data, headers } = await Api.get(relativeUrl)
