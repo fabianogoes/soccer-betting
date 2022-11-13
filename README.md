@@ -1,10 +1,10 @@
-# ⚽️ World Cup
+# ⚽️ Soccer Betting
 
  🎯 This Project is about FIFA World Cup, should be able to manage: Teams, Groups, Matches, Users, Bets, Rules, Statistics, etc... 
 
 > ℹ️ This project was created as a study base for the Go language and its main frameworks and libraries. It's an open source project, so feel free to participate with ideas and code by creating issues and submitting pull requests.
 
-- [⚽️ World Cup](#️-world-cup)
+- [⚽️ Soccer Betting](#️-soccer-betting)
   - [Stack](#stack)
   - [Run](#run)
     - [Dependencias](#dependencias)
@@ -18,7 +18,7 @@
 - [ReactJS | Frontend](./banckend/README.md)
 
 ## Run
-> TODO: criar um Makefile
+> [ ] TODO: criar um Makefile
 
 ### Dependencias
 - [Setup Golang](https://www.practical-go-lessons.com/chap-4-setup-your-dev-environment)
@@ -41,7 +41,7 @@ yarn dev # rinning frontend project
 
 ### Mock Backend
 
-Para rodar o front end com o backend mockado, e não precisar instalar Golang local
+To run the frontend with the mocked backend, and not need to install Golang locally
 
 ```bash
 cd frontend
