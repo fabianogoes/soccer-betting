@@ -20,6 +20,7 @@
 - [TypeScript](https://www.typescriptlang.org/docs/)
 - [Material UI](https://mui.com/material-ui/getting-started/overview/)
 - [Json Server](https://github.com/typicode/json-server)
+- [Axios](https://github.com/axios/axios)
 
 ## Json Server Mock Backend
 
