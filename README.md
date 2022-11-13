@@ -22,8 +22,8 @@
 
 
 ## Stack
-- [Golang | Backend](./banckend/README.md)
-- [ReactJS | Frontend](./banckend/README.md)
+- [Backend | Golang...](./banckend/README.md)
+- [Frontend | ReactJS...](./banckend/README.md)
 
 ## Run
 - [ ] TODO: create a Makefile
