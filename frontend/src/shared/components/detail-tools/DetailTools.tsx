@@ -8,13 +8,13 @@ interface IDetailToolsProps {
   showBackButton?: boolean
   showDeleteButton?: boolean
   showSaveButton?: boolean
-  showSaveAndBackButton?: boolean
+  showSaveAndCloseButton?: boolean
 
   showNewButtonLoading?: boolean,
   showBackButtonLoading?: boolean,
   showDeleteButtonLoading?: boolean,
   showSaveButtonLoading?: boolean,
-  showSaveAndBackButtonLoading?: boolean,
+  showSaveAndCloseButtonLoading?: boolean,
 
   onNewButtonClick?: () => void
   onBackButtonClick?: () => void
@@ -30,13 +30,13 @@ export const DetailTools: React.FC<IDetailToolsProps> = ({
   showBackButton = true,
   showDeleteButton = true,
   showSaveButton = true,
-  showSaveAndBackButton = false,
+  showSaveAndCloseButton = false,
 
   showNewButtonLoading = false,
   showBackButtonLoading = false,
   showDeleteButtonLoading = false,
   showSaveButtonLoading = false,
-  showSaveAndBackButtonLoading = false,
+  showSaveAndCloseButtonLoading = false,
 
   onNewButtonClick,
   onBackButtonClick,
@@ -77,7 +77,7 @@ export const DetailTools: React.FC<IDetailToolsProps> = ({
         <Skeleton width={110} height={60} />
       )}
 
-      {(showSaveAndBackButton && !showSaveAndBackButtonLoading && !smDown && !mdDown) && (<Button
+      {(showSaveAndCloseButton && !showSaveAndCloseButtonLoading && !smDown && !mdDown) && (<Button
         color='primary'
         disableElevation
         variant='outlined'
@@ -85,12 +85,12 @@ export const DetailTools: React.FC<IDetailToolsProps> = ({
         startIcon={<Icon>save</Icon>}
       >
         <Typography variant='button' whiteSpace="nowrap" textOverflow="ellipsis" overflow="hidden">
-          Salvar e voltar
+          Salvar e fechar
         </Typography>
       </Button>
       )}
 
-      {showSaveAndBackButtonLoading && !smDown && !mdDown && (
+      {showSaveAndCloseButtonLoading && !smDown && !mdDown && (
         <Skeleton width={180} height={60} />
       )}
 
@@ -134,7 +134,7 @@ export const DetailTools: React.FC<IDetailToolsProps> = ({
       {
         (
           showBackButton &&
-          (showNewButton || showDeleteButton || showSaveButton || showSaveAndBackButton)
+          (showNewButton || showDeleteButton || showSaveButton || showSaveAndCloseButton)
         ) && (
           <Divider variant='middle' orientation='vertical' />
         )
