@@ -78,7 +78,7 @@ const updateById = async (id: string, requestData: IUserDetail): Promise<void | 
   }
 }
 
-const deleteById = async (id: string): Promise<any> => {
+const deleteById = async (id: string): Promise<ITeamDetail | Error> => {
   try {
     await Api.delete(`/users/${id}`)
   } catch (error) {

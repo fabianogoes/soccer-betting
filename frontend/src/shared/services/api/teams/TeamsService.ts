@@ -1,7 +1,7 @@
 import { Environment } from '../../../environment'
 import { Api } from '../axios-config'
 
-interface ITeamList {
+export interface ITeamList {
   id: string
   name: string
   group: string
@@ -9,7 +9,7 @@ interface ITeamList {
   abbreviation: string
 }
 
-interface ITeamDetail {
+export interface ITeamDetail {
   id: string
   name: string
   group: string
@@ -25,7 +25,7 @@ type ITeamWithTotalCount = {
 const getAll = async (page = 1, filter = ''): Promise<ITeamWithTotalCount | Error> => {
   console.log(`TeamsService:getAll(page=${page}, filter=${filter})`)
   try {
-    const relativeUrl = `/teams?_page=${page}&_limit=${Environment.MAX_LINES}&name${filter}`
+    const relativeUrl = `/teams?_page=${page}&_limit=${Environment.MAX_LINES}&name_like=${filter}`
     const { data, headers } = await Api.get(relativeUrl)
 
     if (data) {
@@ -57,8 +57,18 @@ const getById = async (id: string): Promise<ITeamDetail | Error> => {
   }
 }
 
+const deleteById = async (id: string): Promise<ITeamDetail | Error> => {
+  try {
+    await Api.delete(`/teams/${id}`)
+  } catch (error) {
+    console.error(error)
+    return new Error((error as {message: string}).message || `Erro ao deletar o time: ${id}.`)
+  }
+}
+
 
 export const TeamsService = {
   getAll,
   getById,
+  deleteById,
 }

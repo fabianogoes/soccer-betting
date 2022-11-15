@@ -41,6 +41,7 @@ export const AppRoutes = () => {
     <Routes>
       <Route path="/dashboard" element={<Dashboard/>} />
       <Route path="/teams" element={<TeamList/>} />
+      <Route path="/teams/detail/:id" element={<div>Detalhe do Time</div>} />
       {/* <Route path="/teams/detail/:id" element={<TeamDetail/>} /> */}
 
       <Route path="*" element={<Navigate to="/dashboard" />} />
