@@ -1,14 +1,12 @@
 import { Grid, LinearProgress, Paper } from '@mui/material'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import { FormHandles } from '@unform/core'
-import { Form } from '@unform/web'
+import { Box } from '@mui/system'
 
 import { DetailTools } from '../../shared/components'
 import { LayoutBasePage } from '../../shared/layouts'
 import { TeamsService } from '../../shared/services/api/teams/TeamsService'
-import { VTextField } from '../../shared/forms'
-import { Box } from '@mui/system'
+import { VTextField, VForm, useVForm } from '../../shared/forms'
 
 interface IFormData {
   name: string;
@@ -19,8 +17,7 @@ interface IFormData {
 export const TeamDetail: React.FC = () => {
   const { id = 'new' } = useParams<'id'>()
   const navigate = useNavigate()
-
-  const formRef = useRef<FormHandles>(null)
+  const { formRef, save, saveAndClose, isSaveAndClose } = useVForm()
 
   const [isLoading, setIsLoading] = useState(false)
   const [name, setName] = useState('')
@@ -42,6 +39,12 @@ export const TeamDetail: React.FC = () => {
             formRef.current?.setData(result)
           }
         })
+    } else {
+      formRef.current?.setData({
+        name: '',
+        abbreviation: '',
+        group: '',
+      })
     }
   }, [id])
 
@@ -59,25 +62,35 @@ export const TeamDetail: React.FC = () => {
       //       alert(result.message)
       //     } else {
       //       navigate(`/teams/detail/${result}`)
+      //       if (isSaveAndClose()) {
+      //         navigate('/teams')
+      //       } else {
+      //         navigate(`/teams/detail/${idResult}`)
+      //       }      
       //     }
       //   })
-      console.log('create', data)
       alert('create')
-      const idResult = '37b21df3-a042-40d9-a1a9-1bb09cb5897e'
-      navigate(`/teams/detail/${idResult}`)
+      console.log('create', data)
+      const idResult = '2e9fe363-2175-48e9-8b9a-9690178896c3' // id retornado da api no create
+      if (isSaveAndClose()) {
+        navigate('/teams')
+      } else {
+        navigate(`/teams/detail/${idResult}`)
+      }
     } else {
       // TeamsService
       //   .updateById(id, data)
       //   .then((result) => {
       //     setIsLoading(false)
-
       //     if (result instanceof Error) {
       //       alert(result.message)
       //     }
       //   })
-      console.log('update', id, data)
       alert('update')
-      navigate(`/teams/detail/${id}`)
+      console.log('update', id, data)
+      if (isSaveAndClose()) {
+        navigate('/teams')
+      }
     }
   }
   
@@ -106,8 +119,8 @@ export const TeamDetail: React.FC = () => {
           showNewButton={id !== 'new'}
           showDeleteButton={id !== 'new'}
 
-          onSaveButtonClick={() => formRef.current?.submitForm()}
-          onSaveAndBackButtonClick={() => formRef.current?.submitForm()}
+          onSaveButtonClick={save}
+          onSaveAndBackButtonClick={saveAndClose}
           onBackButtonClick={() => navigate('/teams')}
           onDeleteButtonClick={() => handleDelete(id)}
           onNewButtonClick={() => navigate('/teams/detail/new')}
@@ -119,7 +132,7 @@ export const TeamDetail: React.FC = () => {
         <LinearProgress variant='indeterminate' />
       )}
 
-      <Form ref={formRef} onSubmit={handleSave}>
+      <VForm ref={formRef} onSubmit={handleSave}>
         <Box sx={{margin: 1}} display='flex' flexDirection='column' component={Paper} >
 
           <Grid container direction='column' padding={2} spacing={2} >
@@ -131,7 +144,7 @@ export const TeamDetail: React.FC = () => {
                   placeholder='Nome do time' 
                   name='name'
                   label='Nome'
-                  disabled={id != 'new'}
+                  disabled={id !== 'new'}
                   onChange={e => setName(e.target.value)}
                 />
               </Grid>
@@ -144,7 +157,7 @@ export const TeamDetail: React.FC = () => {
                   placeholder='Sigla' 
                   name='abbreviation'
                   label='Sigla'
-                  disabled={id != 'new'}
+                  disabled={id !== 'new'}
                 />
               </Grid>
 
@@ -154,7 +167,7 @@ export const TeamDetail: React.FC = () => {
                   placeholder='Grupo' 
                   name='group'
                   label='Grupo'
-                  disabled={id != 'new'}
+                  disabled={id !== 'new'}
                 />
               </Grid>
             </Grid>
@@ -162,7 +175,7 @@ export const TeamDetail: React.FC = () => {
           
         </Box>
 
-      </Form>
+      </VForm>
 
     </LayoutBasePage>
   )
