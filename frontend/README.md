@@ -23,8 +23,10 @@
 - [Vite](https://vitejs.dev/guide/)
 - [TypeScript](https://www.typescriptlang.org/docs/)
 - [Material UI](https://mui.com/material-ui/getting-started/overview/)
+- [UnForm](https://unform-rocketseat.vercel.app/quick-start/)
 - [Json Server](https://github.com/typicode/json-server)
 - [Axios](https://github.com/axios/axios)
+- [UUID](https://github.com/uuidjs/uuid)
 
 ## Json Server Mock Backend
 
@@ -65,6 +67,7 @@ Configurações e extenções para o Visual Studio Code
 
 - [Curso de React com Material UI 5 e Typescript | Youtube](https://youtube.com/playlist?list=PL29TaWXah3iaqOejItvW--TaFr9NcruyQ)
 - [Começando com React em 2022 by Rocketseat | Youtube](https://youtu.be/pDbcC-xSat4)
+- [Formulários no ReactJS & React Native com Unform by Rocketseat | Youtube](https://youtu.be/P65RJTTqkN4)
 - [Configurando VSCode para Node.js, ReactJS e React Native | Diego Fernandes | Youtube](https://youtu.be/c7P03kkrEG8)
 - [CÓMO configurar ESLINT y PRETTIER en REACT | Youtube](https://youtu.be/3BHXuZvI4FI)
 

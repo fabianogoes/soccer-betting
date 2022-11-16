@@ -71,6 +71,7 @@ export const TeamList: React.FC = () => {
           showSearchInput
           textNewButton='Novo' 
           searchText={search}
+          onNewButtonClick={() => navigate('/teams/detail/new')}
           onChangingSearchText={text => setSearchParams({ search: text, page: '1' }, { replace: true })}
         />
       }

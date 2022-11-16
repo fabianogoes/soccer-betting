@@ -22,6 +22,16 @@ type ITeamWithTotalCount = {
   totalCount: number
 }
 
+const create = async (data: any): Promise<string | Error> => {
+  console.log(data)
+  return '123'
+}
+
+const updateById = async (id: string, data: any): Promise<string | Error> => {
+  console.log(data)
+  return id
+}
+
 const getAll = async (page = 1, filter = ''): Promise<ITeamWithTotalCount | Error> => {
   console.log(`TeamsService:getAll(page=${page}, filter=${filter})`)
   try {
@@ -71,4 +81,6 @@ export const TeamsService = {
   getAll,
   getById,
   deleteById,
+  create,
+  updateById,
 }
