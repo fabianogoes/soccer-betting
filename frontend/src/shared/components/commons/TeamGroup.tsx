@@ -62,7 +62,7 @@ export const TeamGroupCard: React.FC<ITeamGroupCardProps> = ({
                 <CardHeader title={team.name}/>
                 <CardContent>
                   {/* <ImageListItemBar position='bottom' title={team.abbreviation} sx={{width: '100%'}} style={{marginLeft: 'auto', marginRight: 'auto'}} />            */}
-                  <TeamFlagBox imgWidth='100%' imgSrc={team.abbreviation} imgAlt={team.name}/>
+                  <TeamFlagBox imgWidth='50%' imgSrc={team.abbreviation} imgAlt={team.name}/>
                 </CardContent>
               </Card>
             </Box>
