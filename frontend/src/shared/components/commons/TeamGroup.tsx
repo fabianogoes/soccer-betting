@@ -2,14 +2,24 @@ import { Box, Card, Grid, ImageList, Paper, Typography, ImageListItem, ImageList
 
 import { TeamFlagBox } from './TeamFlag'
 
+type VariantSize = 
+| 'h3'
+| 'h4'
+| 'h5'
+| 'h6'
+
 interface ITeamGroupProps {
   group: string
+  typographyVariant?: VariantSize
 }
 
-export const TeamGroupBox: React.FC<ITeamGroupProps> = ({group}) => {
+export const TeamGroupBox: React.FC<ITeamGroupProps> = ({
+  group,
+  typographyVariant = 'h4'
+}) => {
   return (
     <Box textAlign='center'>
-      <Typography variant='h4' whiteSpace="nowrap" textOverflow="ellipsis" overflow="hidden">
+      <Typography variant={typographyVariant} whiteSpace="nowrap" textOverflow="ellipsis" overflow="hidden">
         {'GRUPO: ' + group}
       </Typography>
     </Box>
@@ -49,7 +59,7 @@ export const TeamGroupCard: React.FC<ITeamGroupCardProps> = ({
                 <CardHeader title={team.name}/>
                 <CardContent>
                   {/* <ImageListItemBar position='bottom' title={team.abbreviation} sx={{width: '100%'}} style={{marginLeft: 'auto', marginRight: 'auto'}} />            */}
-                  <TeamFlagBox imgSrc={team.abbreviation} imgAlt={team.name}/>
+                  <TeamFlagBox imgWidth='100%' imgSrc={team.abbreviation} imgAlt={team.name}/>
                 </CardContent>
               </Card>
             </Box>

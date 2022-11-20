@@ -86,15 +86,17 @@ const flagMap: {[key: string]: string} = {
 interface ITeamFlagProps {
   imgSrc: string
   imgAlt: string
+  imgWidth: string
 }
 
 export const TeamFlagBox: React.FC<ITeamFlagProps> = ({
   imgSrc,
   imgAlt = 'Team Flag',
+  imgWidth = '100%',
 }) => {
   return (
     <Box style={{ marginLeft: 'auto', marginRight: 'auto' }} width='50%'>
-      <img src={flagMap[imgSrc]} alt={imgAlt} width='100%' style={{ border: `1px ${grey[300]} solid`, borderRadius: '50%' }}/>      
+      <img src={flagMap[imgSrc]} alt={imgAlt} width={imgWidth} style={{ border: `1px ${grey[300]} solid`, borderRadius: '50%' }}/>      
     </Box>
   )
 }

@@ -1,6 +1,8 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { 
+  Avatar,
   Chip,
+  Divider,
   LinearProgress, 
   Paper, 
   Table, 
@@ -9,7 +11,8 @@ import {
   TableContainer, 
   TableFooter, 
   TableHead, 
-  TableRow 
+  TableRow, 
+  TextField
 } from '@mui/material'
 import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined'
 
@@ -19,6 +22,8 @@ import { useDebounce } from '../../shared/hooks'
 
 import { TeamFlagBox } from '../../shared/components/commons/TeamFlag'
 import { TeamGroupBox } from '../../shared/components/commons/TeamGroup'
+import { Box } from '@mui/system'
+import { useTheme } from '@emotion/react'
 
 export const MatchList: React.FC = () => {
   const { debounce } = useDebounce()
@@ -47,41 +52,62 @@ export const MatchList: React.FC = () => {
 
   }, [])
 
+  const theme = useTheme()
   return (
     <LayoutBasePage title="Listagem de Jogos">
 
       <TableContainer component={Paper} variant="outlined" sx={{ margin: 1, width: 'auto' }}>
         <Table>
 
-          <TableHead>
-            <TableRow>
-              <TableCell align='center'>Grupo</TableCell>
-              <TableCell align='center'>Data</TableCell>
-              <TableCell align='center'>Team A</TableCell>
-              <TableCell align='center'>Team B</TableCell>
-            </TableRow>
-          </TableHead>
           {!isLoading && 
             <TableBody>
 
               {rows.map((row) => (
                 <TableRow key={row.id}>
                   <TableCell align='center'>
-                    <TeamGroupBox group={row.teamA.group} />
-                  </TableCell>
-                  <TableCell align='center'>                    
-                    <Chip 
-                      icon={<CalendarMonthOutlinedIcon />} 
-                      label={new Date(row.schedule).toLocaleString()} 
-                      variant='outlined'
-                      color='primary'
+                    <TeamFlagBox 
+                      imgWidth='40%' 
+                      imgSrc={row.teamA.abbreviation} 
+                      imgAlt={row.teamA.abbreviation} 
+                    />
+                    <TextField 
+                      id="standard-basic" 
+                      inputProps={{min: 0, style: { textAlign: 'center' }}} 
+                      variant="outlined" 
+                      size='small' 
+                      disabled={true}
+                      defaultValue={0} 
                     />
                   </TableCell>
                   <TableCell align='center'>
-                    <TeamFlagBox imgSrc={row.teamA.abbreviation} teamName={row.teamA.namePTBR} imgAlt={row.teamA.abbreviation} />
+                    {/* <Box width="100%" display="flex" alignItems="center" justifyContent="center"> */}
+                    {/* <Avatar variant='rounded'>X</Avatar> */}
+                    {/* </Box> */}
+                    <Divider>
+                      <Chip label='X' />  
+                    </Divider>
+                    <Chip 
+                      icon={<CalendarMonthOutlinedIcon />} 
+                      label={(new Date(row.schedule).toLocaleString()) + ' - GRUPO: ' + row.teamA.group} 
+                      variant='outlined'
+                      color='primary'
+                      sx={{m: 2}}
+                    /> 
                   </TableCell>
                   <TableCell align='center'>
-                    <TeamFlagBox imgSrc={row.teamB.abbreviation} teamName={row.teamB.namePTBR} imgAlt={row.teamB.abbreviation} />
+                    <TeamFlagBox 
+                      imgWidth='40%' 
+                      imgSrc={row.teamB.abbreviation} 
+                      imgAlt={row.teamB.abbreviation} 
+                    />
+                    <TextField 
+                      id="standard-basic" 
+                      inputProps={{min: 0, style: { textAlign: 'center' }}} 
+                      variant="outlined" 
+                      disabled={true}
+                      size='small' 
+                      defaultValue={0} 
+                    />
                   </TableCell>
                 </TableRow>
               ))}

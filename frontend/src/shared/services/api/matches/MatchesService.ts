@@ -1,4 +1,3 @@
-import { Environment } from '../../../environment'
 import { Api } from '../axios-config'
 
 export interface IMatchList {
@@ -33,10 +32,9 @@ type IMatchWithTotalCount = {
   totalCount: number
 }
 
-const getAll = async (page = 1, filter = ''): Promise<IMatchWithTotalCount | Error> => {
+const getAll = async (): Promise<IMatchWithTotalCount | Error> => {
   try {
-    const relativeUrl = `/matches?_page=${page}&_limit=${Environment.MAX_LINES}&name${filter}`
-    const { data, headers } = await Api.get(relativeUrl)
+    const { data, headers } = await Api.get('/matches')
 
     if (data) {
       return {

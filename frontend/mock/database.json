@@ -323,35 +323,6 @@
   ],
   "matches": [
     {
-      "createdAt": "2022-10-23T20:33:08.273847-03:00",
-      "updatedAt": "2022-10-23T20:33:08.273847-03:00",
-      "deletedAt": null,
-      "id": "4f368d7c-d271-4629-9e29-a2fe8957510c",
-      "teamA": {
-        "createdAt": "2022-10-23T20:33:08.108123-03:00",
-        "updatedAt": "2022-10-23T20:33:08.108123-03:00",
-        "deletedAt": null,
-        "id": "4fadf804-c344-4b62-a521-cd3ca144bca3",
-        "name": "Senegal",
-        "group": "A",
-        "namePTBR": "Senagal",
-        "abbreviation": "SEN"
-      },
-      "teamAID": "4fadf804-c344-4b62-a521-cd3ca144bca3",
-      "teamB": {
-        "createdAt": "2022-10-23T20:33:08.113149-03:00",
-        "updatedAt": "2022-10-23T20:33:08.113149-03:00",
-        "deletedAt": null,
-        "id": "591c4d77-60ef-4c12-8108-bdc152bd980e",
-        "name": "Netherlands",
-        "group": "A",
-        "namePTBR": "Holanda",
-        "abbreviation": "HOL"
-      },
-      "teamBID": "591c4d77-60ef-4c12-8108-bdc152bd980e",
-      "schedule": "2022-11-21T07:00:00-03:00"
-    },
-    {
       "createdAt": "2022-10-23T20:33:08.286599-03:00",
       "updatedAt": "2022-10-23T20:33:08.286599-03:00",
       "deletedAt": null,
@@ -378,6 +349,35 @@
         "abbreviation": "EQU"
       },
       "teamBID": "105ea3be-93ab-4323-a6da-6a8206dec171",
+      "schedule": "2022-11-20T13:00:00-03:00"
+    },
+    {
+      "createdAt": "2022-10-23T20:33:08.273847-03:00",
+      "updatedAt": "2022-10-23T20:33:08.273847-03:00",
+      "deletedAt": null,
+      "id": "4f368d7c-d271-4629-9e29-a2fe8957510c",
+      "teamA": {
+        "createdAt": "2022-10-23T20:33:08.108123-03:00",
+        "updatedAt": "2022-10-23T20:33:08.108123-03:00",
+        "deletedAt": null,
+        "id": "4fadf804-c344-4b62-a521-cd3ca144bca3",
+        "name": "Senegal",
+        "group": "A",
+        "namePTBR": "Senagal",
+        "abbreviation": "SEN"
+      },
+      "teamAID": "4fadf804-c344-4b62-a521-cd3ca144bca3",
+      "teamB": {
+        "createdAt": "2022-10-23T20:33:08.113149-03:00",
+        "updatedAt": "2022-10-23T20:33:08.113149-03:00",
+        "deletedAt": null,
+        "id": "591c4d77-60ef-4c12-8108-bdc152bd980e",
+        "name": "Netherlands",
+        "group": "A",
+        "namePTBR": "Holanda",
+        "abbreviation": "HOL"
+      },
+      "teamBID": "591c4d77-60ef-4c12-8108-bdc152bd980e",
       "schedule": "2022-11-21T13:00:00-03:00"
     },
     {
