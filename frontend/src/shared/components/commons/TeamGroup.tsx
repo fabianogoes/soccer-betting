@@ -1,4 +1,4 @@
-import { Box, Card, Grid, ImageList, Paper, Typography, ImageListItem, ImageListItemBar, CardContent, CardHeader } from '@mui/material'
+import { Box, Card, Grid, ImageList, Paper, Typography, ImageListItem, ImageListItemBar, CardContent, CardHeader, Divider, Chip } from '@mui/material'
 
 import { TeamFlagBox } from './TeamFlag'
 
@@ -46,7 +46,10 @@ export const TeamGroupCard: React.FC<ITeamGroupCardProps> = ({
       <Grid container direction='column'>
         <Grid container item direction='row'>
           <Grid item xs={12} md={12}>
-            <TeamGroupBox group={group} />
+            {/* <TeamGroupBox group={group} /> */}
+            <Divider>
+              <Chip sx={{fontSize: 20}} color='primary' label={'GRUPO: ' + group} />  
+            </Divider>
           </Grid>
         </Grid>
       </Grid>
