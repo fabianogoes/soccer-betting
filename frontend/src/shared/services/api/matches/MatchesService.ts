@@ -1,17 +1,24 @@
 import { Environment } from '../../../environment'
 import { Api } from '../axios-config'
 
-interface IMatchList {
+export interface IMatchList {
   id: string
-  teamAID: string
-  teamAAbbreviation: string
-  teamBID: string
-  teamBAbbreviation: string
-  group: string
   schedule: string
+  teamA: {
+    name: string
+    namePTBR: string
+    group: string
+    abbreviation: string
+  }
+  teamB: {
+    name: string
+    namePTBR: string
+    group: string
+    abbreviation: string
+  }
 }
 
-interface IMatchDetail {
+export interface IMatchDetail {
   id: string
   teamAID: string
   teamAAbbreviation: string
@@ -61,7 +68,7 @@ const getById = async (id: string): Promise<IMatchDetail | Error> => {
 }
 
 
-export const TeamsService = {
+export const MatchesService = {
   getAll,
   getById,
 }

@@ -1,3 +1,6 @@
 export * from './dashboard/Dashboard'
 export * from './teams/TeamList'
 export * from './teams/TeamDetail'
+export * from './users/UserList'
+export * from './users/UserDetail'
+export * from './matches/MatchList'

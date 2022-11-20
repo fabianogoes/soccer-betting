@@ -327,7 +327,7 @@
       "updatedAt": "2022-10-23T20:33:08.273847-03:00",
       "deletedAt": null,
       "id": "4f368d7c-d271-4629-9e29-a2fe8957510c",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.108123-03:00",
         "updatedAt": "2022-10-23T20:33:08.108123-03:00",
         "deletedAt": null,
@@ -337,8 +337,8 @@
         "namePTBR": "Senagal",
         "abbreviation": "SEN"
       },
-      "TeamAID": "4fadf804-c344-4b62-a521-cd3ca144bca3",
-      "TeamB": {
+      "teamAID": "4fadf804-c344-4b62-a521-cd3ca144bca3",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.113149-03:00",
         "updatedAt": "2022-10-23T20:33:08.113149-03:00",
         "deletedAt": null,
@@ -348,15 +348,15 @@
         "namePTBR": "Holanda",
         "abbreviation": "HOL"
       },
-      "TeamBID": "591c4d77-60ef-4c12-8108-bdc152bd980e",
-      "Schedule": "2022-11-21T07:00:00-03:00"
+      "teamBID": "591c4d77-60ef-4c12-8108-bdc152bd980e",
+      "schedule": "2022-11-21T07:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.286599-03:00",
       "updatedAt": "2022-10-23T20:33:08.286599-03:00",
       "deletedAt": null,
       "id": "61571834-d489-4c3a-b818-ee4d4ae44f8e",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.096769-03:00",
         "updatedAt": "2022-10-23T20:33:08.096769-03:00",
         "deletedAt": null,
@@ -366,8 +366,8 @@
         "namePTBR": "Catar",
         "abbreviation": "CAT"
       },
-      "TeamAID": "37b21df3-a042-40d9-a1a9-1bb09cb5897e",
-      "TeamB": {
+      "teamAID": "37b21df3-a042-40d9-a1a9-1bb09cb5897e",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.102937-03:00",
         "updatedAt": "2022-10-23T20:33:08.102937-03:00",
         "deletedAt": null,
@@ -377,15 +377,15 @@
         "namePTBR": "Equador",
         "abbreviation": "EQU"
       },
-      "TeamBID": "105ea3be-93ab-4323-a6da-6a8206dec171",
-      "Schedule": "2022-11-21T13:00:00-03:00"
+      "teamBID": "105ea3be-93ab-4323-a6da-6a8206dec171",
+      "schedule": "2022-11-21T13:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.299873-03:00",
       "updatedAt": "2022-10-23T20:33:08.299873-03:00",
       "deletedAt": null,
       "id": "944bb188-dd96-4bf5-90b0-8c633a533212",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.096769-03:00",
         "updatedAt": "2022-10-23T20:33:08.096769-03:00",
         "deletedAt": null,
@@ -395,8 +395,8 @@
         "namePTBR": "Catar",
         "abbreviation": "CAT"
       },
-      "TeamAID": "37b21df3-a042-40d9-a1a9-1bb09cb5897e",
-      "TeamB": {
+      "teamAID": "37b21df3-a042-40d9-a1a9-1bb09cb5897e",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.108123-03:00",
         "updatedAt": "2022-10-23T20:33:08.108123-03:00",
         "deletedAt": null,
@@ -406,15 +406,15 @@
         "namePTBR": "Senagal",
         "abbreviation": "SEN"
       },
-      "TeamBID": "4fadf804-c344-4b62-a521-cd3ca144bca3",
-      "Schedule": "2022-11-25T10:00:00-03:00"
+      "teamBID": "4fadf804-c344-4b62-a521-cd3ca144bca3",
+      "schedule": "2022-11-25T10:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.310492-03:00",
       "updatedAt": "2022-10-23T20:33:08.310492-03:00",
       "deletedAt": null,
       "id": "eca1bf32-6160-4425-954a-46c75f2ebf0c",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.113149-03:00",
         "updatedAt": "2022-10-23T20:33:08.113149-03:00",
         "deletedAt": null,
@@ -424,8 +424,8 @@
         "namePTBR": "Holanda",
         "abbreviation": "HOL"
       },
-      "TeamAID": "591c4d77-60ef-4c12-8108-bdc152bd980e",
-      "TeamB": {
+      "teamAID": "591c4d77-60ef-4c12-8108-bdc152bd980e",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.102937-03:00",
         "updatedAt": "2022-10-23T20:33:08.102937-03:00",
         "deletedAt": null,
@@ -435,15 +435,15 @@
         "namePTBR": "Equador",
         "abbreviation": "EQU"
       },
-      "TeamBID": "105ea3be-93ab-4323-a6da-6a8206dec171",
-      "Schedule": "2022-11-25T13:00:00-03:00"
+      "teamBID": "105ea3be-93ab-4323-a6da-6a8206dec171",
+      "schedule": "2022-11-25T13:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.325184-03:00",
       "updatedAt": "2022-10-23T20:33:08.325184-03:00",
       "deletedAt": null,
       "id": "5d26b60e-a50d-45b6-a0f2-314954f48a73",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.113149-03:00",
         "updatedAt": "2022-10-23T20:33:08.113149-03:00",
         "deletedAt": null,
@@ -453,8 +453,8 @@
         "namePTBR": "Holanda",
         "abbreviation": "HOL"
       },
-      "TeamAID": "591c4d77-60ef-4c12-8108-bdc152bd980e",
-      "TeamB": {
+      "teamAID": "591c4d77-60ef-4c12-8108-bdc152bd980e",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.096769-03:00",
         "updatedAt": "2022-10-23T20:33:08.096769-03:00",
         "deletedAt": null,
@@ -464,15 +464,15 @@
         "namePTBR": "Catar",
         "abbreviation": "CAT"
       },
-      "TeamBID": "37b21df3-a042-40d9-a1a9-1bb09cb5897e",
-      "Schedule": "2022-11-29T12:00:00-03:00"
+      "teamBID": "37b21df3-a042-40d9-a1a9-1bb09cb5897e",
+      "schedule": "2022-11-29T12:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.33578-03:00",
       "updatedAt": "2022-10-23T20:33:08.33578-03:00",
       "deletedAt": null,
       "id": "758757d2-8356-4d74-a1ce-924635aac7de",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.102937-03:00",
         "updatedAt": "2022-10-23T20:33:08.102937-03:00",
         "deletedAt": null,
@@ -482,8 +482,8 @@
         "namePTBR": "Equador",
         "abbreviation": "EQU"
       },
-      "TeamAID": "105ea3be-93ab-4323-a6da-6a8206dec171",
-      "TeamB": {
+      "teamAID": "105ea3be-93ab-4323-a6da-6a8206dec171",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.108123-03:00",
         "updatedAt": "2022-10-23T20:33:08.108123-03:00",
         "deletedAt": null,
@@ -493,15 +493,15 @@
         "namePTBR": "Senagal",
         "abbreviation": "SEN"
       },
-      "TeamBID": "4fadf804-c344-4b62-a521-cd3ca144bca3",
-      "Schedule": "2022-11-29T12:00:00-03:00"
+      "teamBID": "4fadf804-c344-4b62-a521-cd3ca144bca3",
+      "schedule": "2022-11-29T12:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.34817-03:00",
       "updatedAt": "2022-10-23T20:33:08.34817-03:00",
       "deletedAt": null,
       "id": "b15f5733-1343-4c2f-b652-de4072d79994",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.117991-03:00",
         "updatedAt": "2022-10-23T20:33:08.117991-03:00",
         "deletedAt": null,
@@ -511,8 +511,8 @@
         "namePTBR": "Inglaterra",
         "abbreviation": "ING"
       },
-      "TeamAID": "83cc0512-b63e-4817-a06d-5db8e57a901b",
-      "TeamB": {
+      "teamAID": "83cc0512-b63e-4817-a06d-5db8e57a901b",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.123262-03:00",
         "updatedAt": "2022-10-23T20:33:08.123262-03:00",
         "deletedAt": null,
@@ -522,15 +522,15 @@
         "namePTBR": "Irã",
         "abbreviation": "IRA"
       },
-      "TeamBID": "16e2f283-b3b7-4ad6-bcfd-3d3786d84820",
-      "Schedule": "2022-11-21T10:00:00-03:00"
+      "teamBID": "16e2f283-b3b7-4ad6-bcfd-3d3786d84820",
+      "schedule": "2022-11-21T10:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.362752-03:00",
       "updatedAt": "2022-10-23T20:33:08.362752-03:00",
       "deletedAt": null,
       "id": "0d79f7c0-421c-40d7-a4c4-04bf5d19b053",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.128157-03:00",
         "updatedAt": "2022-10-23T20:33:08.128157-03:00",
         "deletedAt": null,
@@ -540,8 +540,8 @@
         "namePTBR": "EUA",
         "abbreviation": "EUA"
       },
-      "TeamAID": "2acab4c2-6660-4375-80d8-379444930118",
-      "TeamB": {
+      "teamAID": "2acab4c2-6660-4375-80d8-379444930118",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.134397-03:00",
         "updatedAt": "2022-10-23T20:33:08.134397-03:00",
         "deletedAt": null,
@@ -551,15 +551,15 @@
         "namePTBR": "País de Gales",
         "abbreviation": "GAL"
       },
-      "TeamBID": "ca2a93e1-3aa6-4b04-8178-8bb310c21846",
-      "Schedule": "2022-11-21T16:00:00-03:00"
+      "teamBID": "ca2a93e1-3aa6-4b04-8178-8bb310c21846",
+      "schedule": "2022-11-21T16:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.373115-03:00",
       "updatedAt": "2022-10-23T20:33:08.373115-03:00",
       "deletedAt": null,
       "id": "bf00cd0f-3c22-4d67-91ff-4be7d9b58f36",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.134397-03:00",
         "updatedAt": "2022-10-23T20:33:08.134397-03:00",
         "deletedAt": null,
@@ -569,8 +569,8 @@
         "namePTBR": "País de Gales",
         "abbreviation": "GAL"
       },
-      "TeamAID": "ca2a93e1-3aa6-4b04-8178-8bb310c21846",
-      "TeamB": {
+      "teamAID": "ca2a93e1-3aa6-4b04-8178-8bb310c21846",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.123262-03:00",
         "updatedAt": "2022-10-23T20:33:08.123262-03:00",
         "deletedAt": null,
@@ -580,15 +580,15 @@
         "namePTBR": "Irã",
         "abbreviation": "IRA"
       },
-      "TeamBID": "16e2f283-b3b7-4ad6-bcfd-3d3786d84820",
-      "Schedule": "2022-11-25T07:00:00-03:00"
+      "teamBID": "16e2f283-b3b7-4ad6-bcfd-3d3786d84820",
+      "schedule": "2022-11-25T07:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.383039-03:00",
       "updatedAt": "2022-10-23T20:33:08.383039-03:00",
       "deletedAt": null,
       "id": "42646ce5-f0fd-4da6-b0e3-24a74c60442d",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.117991-03:00",
         "updatedAt": "2022-10-23T20:33:08.117991-03:00",
         "deletedAt": null,
@@ -598,8 +598,8 @@
         "namePTBR": "Inglaterra",
         "abbreviation": "ING"
       },
-      "TeamAID": "83cc0512-b63e-4817-a06d-5db8e57a901b",
-      "TeamB": {
+      "teamAID": "83cc0512-b63e-4817-a06d-5db8e57a901b",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.128157-03:00",
         "updatedAt": "2022-10-23T20:33:08.128157-03:00",
         "deletedAt": null,
@@ -609,15 +609,15 @@
         "namePTBR": "EUA",
         "abbreviation": "EUA"
       },
-      "TeamBID": "2acab4c2-6660-4375-80d8-379444930118",
-      "Schedule": "2022-11-25T16:00:00-03:00"
+      "teamBID": "2acab4c2-6660-4375-80d8-379444930118",
+      "schedule": "2022-11-25T16:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.394968-03:00",
       "updatedAt": "2022-10-23T20:33:08.394968-03:00",
       "deletedAt": null,
       "id": "f69b17f2-78af-463b-8f85-b109f19d92f2",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.134397-03:00",
         "updatedAt": "2022-10-23T20:33:08.134397-03:00",
         "deletedAt": null,
@@ -627,8 +627,8 @@
         "namePTBR": "País de Gales",
         "abbreviation": "GAL"
       },
-      "TeamAID": "ca2a93e1-3aa6-4b04-8178-8bb310c21846",
-      "TeamB": {
+      "teamAID": "ca2a93e1-3aa6-4b04-8178-8bb310c21846",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.117991-03:00",
         "updatedAt": "2022-10-23T20:33:08.117991-03:00",
         "deletedAt": null,
@@ -638,15 +638,15 @@
         "namePTBR": "Inglaterra",
         "abbreviation": "ING"
       },
-      "TeamBID": "83cc0512-b63e-4817-a06d-5db8e57a901b",
-      "Schedule": "2022-11-29T16:00:00-03:00"
+      "teamBID": "83cc0512-b63e-4817-a06d-5db8e57a901b",
+      "schedule": "2022-11-29T16:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.406285-03:00",
       "updatedAt": "2022-10-23T20:33:08.406285-03:00",
       "deletedAt": null,
       "id": "078e70ed-a9d6-4b05-9407-c2ffe76df78a",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.123262-03:00",
         "updatedAt": "2022-10-23T20:33:08.123262-03:00",
         "deletedAt": null,
@@ -656,8 +656,8 @@
         "namePTBR": "Irã",
         "abbreviation": "IRA"
       },
-      "TeamAID": "16e2f283-b3b7-4ad6-bcfd-3d3786d84820",
-      "TeamB": {
+      "teamAID": "16e2f283-b3b7-4ad6-bcfd-3d3786d84820",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.128157-03:00",
         "updatedAt": "2022-10-23T20:33:08.128157-03:00",
         "deletedAt": null,
@@ -667,15 +667,15 @@
         "namePTBR": "EUA",
         "abbreviation": "EUA"
       },
-      "TeamBID": "2acab4c2-6660-4375-80d8-379444930118",
-      "Schedule": "2022-11-29T16:00:00-03:00"
+      "teamBID": "2acab4c2-6660-4375-80d8-379444930118",
+      "schedule": "2022-11-29T16:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.417512-03:00",
       "updatedAt": "2022-10-23T20:33:08.417512-03:00",
       "deletedAt": null,
       "id": "bf351cb9-4740-4046-a9ee-57262b8f4437",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.140021-03:00",
         "updatedAt": "2022-10-23T20:33:08.140021-03:00",
         "deletedAt": null,
@@ -685,8 +685,8 @@
         "namePTBR": "Argentina",
         "abbreviation": "ARG"
       },
-      "TeamAID": "8e2d4d74-e183-4f72-a294-90d65217411b",
-      "TeamB": {
+      "teamAID": "8e2d4d74-e183-4f72-a294-90d65217411b",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.145-03:00",
         "updatedAt": "2022-10-23T20:33:08.145-03:00",
         "deletedAt": null,
@@ -696,15 +696,15 @@
         "namePTBR": "Arábia Saudita",
         "abbreviation": "ARA"
       },
-      "TeamBID": "06a8ee5e-edcc-4591-9ad6-365b6ffd21f9",
-      "Schedule": "2022-11-22T07:00:00-03:00"
+      "teamBID": "06a8ee5e-edcc-4591-9ad6-365b6ffd21f9",
+      "schedule": "2022-11-22T07:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.431256-03:00",
       "updatedAt": "2022-10-23T20:33:08.431256-03:00",
       "deletedAt": null,
       "id": "0b509a4d-4e57-419e-9fea-570bb4964c2d",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.14994-03:00",
         "updatedAt": "2022-10-23T20:33:08.14994-03:00",
         "deletedAt": null,
@@ -714,8 +714,8 @@
         "namePTBR": "México",
         "abbreviation": "MEX"
       },
-      "TeamAID": "379880a4-cff9-4f7a-b55d-50ea87ed2dde",
-      "TeamB": {
+      "teamAID": "379880a4-cff9-4f7a-b55d-50ea87ed2dde",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.155942-03:00",
         "updatedAt": "2022-10-23T20:33:08.155942-03:00",
         "deletedAt": null,
@@ -725,15 +725,15 @@
         "namePTBR": "Polônias",
         "abbreviation": "POL"
       },
-      "TeamBID": "3493ae54-e4ba-4e23-bb29-8faf440b6b70",
-      "Schedule": "2022-11-22T13:00:00-03:00"
+      "teamBID": "3493ae54-e4ba-4e23-bb29-8faf440b6b70",
+      "schedule": "2022-11-22T13:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.442256-03:00",
       "updatedAt": "2022-10-23T20:33:08.442256-03:00",
       "deletedAt": null,
       "id": "650e666a-fbd9-4e8d-99cd-e5f812bc3830",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.155942-03:00",
         "updatedAt": "2022-10-23T20:33:08.155942-03:00",
         "deletedAt": null,
@@ -743,8 +743,8 @@
         "namePTBR": "Polônias",
         "abbreviation": "POL"
       },
-      "TeamAID": "3493ae54-e4ba-4e23-bb29-8faf440b6b70",
-      "TeamB": {
+      "teamAID": "3493ae54-e4ba-4e23-bb29-8faf440b6b70",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.145-03:00",
         "updatedAt": "2022-10-23T20:33:08.145-03:00",
         "deletedAt": null,
@@ -754,15 +754,15 @@
         "namePTBR": "Arábia Saudita",
         "abbreviation": "ARA"
       },
-      "TeamBID": "06a8ee5e-edcc-4591-9ad6-365b6ffd21f9",
-      "Schedule": "2022-11-26T10:00:00-03:00"
+      "teamBID": "06a8ee5e-edcc-4591-9ad6-365b6ffd21f9",
+      "schedule": "2022-11-26T10:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.452371-03:00",
       "updatedAt": "2022-10-23T20:33:08.452371-03:00",
       "deletedAt": null,
       "id": "488a5782-093b-4c89-b3f9-811ab86ecc27",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.140021-03:00",
         "updatedAt": "2022-10-23T20:33:08.140021-03:00",
         "deletedAt": null,
@@ -772,8 +772,8 @@
         "namePTBR": "Argentina",
         "abbreviation": "ARG"
       },
-      "TeamAID": "8e2d4d74-e183-4f72-a294-90d65217411b",
-      "TeamB": {
+      "teamAID": "8e2d4d74-e183-4f72-a294-90d65217411b",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.14994-03:00",
         "updatedAt": "2022-10-23T20:33:08.14994-03:00",
         "deletedAt": null,
@@ -783,15 +783,15 @@
         "namePTBR": "México",
         "abbreviation": "MEX"
       },
-      "TeamBID": "379880a4-cff9-4f7a-b55d-50ea87ed2dde",
-      "Schedule": "2022-11-26T16:00:00-03:00"
+      "teamBID": "379880a4-cff9-4f7a-b55d-50ea87ed2dde",
+      "schedule": "2022-11-26T16:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.464428-03:00",
       "updatedAt": "2022-10-23T20:33:08.464428-03:00",
       "deletedAt": null,
       "id": "1808c306-15be-4d2d-b407-c97c4b21dc80",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.155942-03:00",
         "updatedAt": "2022-10-23T20:33:08.155942-03:00",
         "deletedAt": null,
@@ -801,8 +801,8 @@
         "namePTBR": "Polônias",
         "abbreviation": "POL"
       },
-      "TeamAID": "3493ae54-e4ba-4e23-bb29-8faf440b6b70",
-      "TeamB": {
+      "teamAID": "3493ae54-e4ba-4e23-bb29-8faf440b6b70",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.140021-03:00",
         "updatedAt": "2022-10-23T20:33:08.140021-03:00",
         "deletedAt": null,
@@ -812,15 +812,15 @@
         "namePTBR": "Argentina",
         "abbreviation": "ARG"
       },
-      "TeamBID": "8e2d4d74-e183-4f72-a294-90d65217411b",
-      "Schedule": "2022-11-30T16:00:00-03:00"
+      "teamBID": "8e2d4d74-e183-4f72-a294-90d65217411b",
+      "schedule": "2022-11-30T16:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.474666-03:00",
       "updatedAt": "2022-10-23T20:33:08.474666-03:00",
       "deletedAt": null,
       "id": "8eb38ebc-b8ce-4c5d-b19e-30e853addced",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.145-03:00",
         "updatedAt": "2022-10-23T20:33:08.145-03:00",
         "deletedAt": null,
@@ -830,8 +830,8 @@
         "namePTBR": "Arábia Saudita",
         "abbreviation": "ARA"
       },
-      "TeamAID": "06a8ee5e-edcc-4591-9ad6-365b6ffd21f9",
-      "TeamB": {
+      "teamAID": "06a8ee5e-edcc-4591-9ad6-365b6ffd21f9",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.14994-03:00",
         "updatedAt": "2022-10-23T20:33:08.14994-03:00",
         "deletedAt": null,
@@ -841,15 +841,15 @@
         "namePTBR": "México",
         "abbreviation": "MEX"
       },
-      "TeamBID": "379880a4-cff9-4f7a-b55d-50ea87ed2dde",
-      "Schedule": "2022-11-30T16:00:00-03:00"
+      "teamBID": "379880a4-cff9-4f7a-b55d-50ea87ed2dde",
+      "schedule": "2022-11-30T16:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.48585-03:00",
       "updatedAt": "2022-10-23T20:33:08.48585-03:00",
       "deletedAt": null,
       "id": "b7041912-1684-4851-b88e-b511ca5883d9",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.169889-03:00",
         "updatedAt": "2022-10-23T20:33:08.169889-03:00",
         "deletedAt": null,
@@ -859,8 +859,8 @@
         "namePTBR": "Dinamarca",
         "abbreviation": "DIN"
       },
-      "TeamAID": "e68ff757-9c17-4227-8e2a-a8803ead5295",
-      "TeamB": {
+      "teamAID": "e68ff757-9c17-4227-8e2a-a8803ead5295",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.175072-03:00",
         "updatedAt": "2022-10-23T20:33:08.175072-03:00",
         "deletedAt": null,
@@ -870,15 +870,15 @@
         "namePTBR": "Tunísia",
         "abbreviation": "TUN"
       },
-      "TeamBID": "92814a0b-336f-49ef-ad77-cf7e46441954",
-      "Schedule": "2022-11-22T10:00:00-03:00"
+      "teamBID": "92814a0b-336f-49ef-ad77-cf7e46441954",
+      "schedule": "2022-11-22T10:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.496326-03:00",
       "updatedAt": "2022-10-23T20:33:08.496326-03:00",
       "deletedAt": null,
       "id": "1290de52-6ba3-419b-84e8-7c31536dfa6e",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.160323-03:00",
         "updatedAt": "2022-10-23T20:33:08.160323-03:00",
         "deletedAt": null,
@@ -888,8 +888,8 @@
         "namePTBR": "França",
         "abbreviation": "FRA"
       },
-      "TeamAID": "6970a12c-e6a0-40ab-b18f-025de3472140",
-      "TeamB": {
+      "teamAID": "6970a12c-e6a0-40ab-b18f-025de3472140",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.164782-03:00",
         "updatedAt": "2022-10-23T20:33:08.164782-03:00",
         "deletedAt": null,
@@ -899,15 +899,15 @@
         "namePTBR": "Austrália",
         "abbreviation": "AUS"
       },
-      "TeamBID": "5b5fa1ad-9549-460e-a776-49aff6ee6369",
-      "Schedule": "2022-11-22T16:00:00-03:00"
+      "teamBID": "5b5fa1ad-9549-460e-a776-49aff6ee6369",
+      "schedule": "2022-11-22T16:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.509771-03:00",
       "updatedAt": "2022-10-23T20:33:08.509771-03:00",
       "deletedAt": null,
       "id": "d6d60b96-d915-4942-a14d-89122109136c",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.175072-03:00",
         "updatedAt": "2022-10-23T20:33:08.175072-03:00",
         "deletedAt": null,
@@ -917,8 +917,8 @@
         "namePTBR": "Tunísia",
         "abbreviation": "TUN"
       },
-      "TeamAID": "92814a0b-336f-49ef-ad77-cf7e46441954",
-      "TeamB": {
+      "teamAID": "92814a0b-336f-49ef-ad77-cf7e46441954",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.164782-03:00",
         "updatedAt": "2022-10-23T20:33:08.164782-03:00",
         "deletedAt": null,
@@ -928,15 +928,15 @@
         "namePTBR": "Austrália",
         "abbreviation": "AUS"
       },
-      "TeamBID": "5b5fa1ad-9549-460e-a776-49aff6ee6369",
-      "Schedule": "2022-11-26T07:00:00-03:00"
+      "teamBID": "5b5fa1ad-9549-460e-a776-49aff6ee6369",
+      "schedule": "2022-11-26T07:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.522126-03:00",
       "updatedAt": "2022-10-23T20:33:08.522126-03:00",
       "deletedAt": null,
       "id": "1adca5ca-9e1f-4a83-8d3f-890959d5d406",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.160323-03:00",
         "updatedAt": "2022-10-23T20:33:08.160323-03:00",
         "deletedAt": null,
@@ -946,8 +946,8 @@
         "namePTBR": "França",
         "abbreviation": "FRA"
       },
-      "TeamAID": "6970a12c-e6a0-40ab-b18f-025de3472140",
-      "TeamB": {
+      "teamAID": "6970a12c-e6a0-40ab-b18f-025de3472140",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.169889-03:00",
         "updatedAt": "2022-10-23T20:33:08.169889-03:00",
         "deletedAt": null,
@@ -957,15 +957,15 @@
         "namePTBR": "Dinamarca",
         "abbreviation": "DIN"
       },
-      "TeamBID": "e68ff757-9c17-4227-8e2a-a8803ead5295",
-      "Schedule": "2022-11-26T13:00:00-03:00"
+      "teamBID": "e68ff757-9c17-4227-8e2a-a8803ead5295",
+      "schedule": "2022-11-26T13:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.534263-03:00",
       "updatedAt": "2022-10-23T20:33:08.534263-03:00",
       "deletedAt": null,
       "id": "c7c0adfd-dabc-4f7f-91c0-7c870f84ec86",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.164782-03:00",
         "updatedAt": "2022-10-23T20:33:08.164782-03:00",
         "deletedAt": null,
@@ -975,8 +975,8 @@
         "namePTBR": "Austrália",
         "abbreviation": "AUS"
       },
-      "TeamAID": "5b5fa1ad-9549-460e-a776-49aff6ee6369",
-      "TeamB": {
+      "teamAID": "5b5fa1ad-9549-460e-a776-49aff6ee6369",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.169889-03:00",
         "updatedAt": "2022-10-23T20:33:08.169889-03:00",
         "deletedAt": null,
@@ -986,15 +986,15 @@
         "namePTBR": "Dinamarca",
         "abbreviation": "DIN"
       },
-      "TeamBID": "e68ff757-9c17-4227-8e2a-a8803ead5295",
-      "Schedule": "2022-11-30T12:00:00-03:00"
+      "teamBID": "e68ff757-9c17-4227-8e2a-a8803ead5295",
+      "schedule": "2022-11-30T12:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.54692-03:00",
       "updatedAt": "2022-10-23T20:33:08.54692-03:00",
       "deletedAt": null,
       "id": "5117e180-c884-44b1-8cb0-d74e6a7fd418",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.175072-03:00",
         "updatedAt": "2022-10-23T20:33:08.175072-03:00",
         "deletedAt": null,
@@ -1004,8 +1004,8 @@
         "namePTBR": "Tunísia",
         "abbreviation": "TUN"
       },
-      "TeamAID": "92814a0b-336f-49ef-ad77-cf7e46441954",
-      "TeamB": {
+      "teamAID": "92814a0b-336f-49ef-ad77-cf7e46441954",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.160323-03:00",
         "updatedAt": "2022-10-23T20:33:08.160323-03:00",
         "deletedAt": null,
@@ -1015,15 +1015,15 @@
         "namePTBR": "França",
         "abbreviation": "FRA"
       },
-      "TeamBID": "6970a12c-e6a0-40ab-b18f-025de3472140",
-      "Schedule": "2022-11-30T12:00:00-03:00"
+      "teamBID": "6970a12c-e6a0-40ab-b18f-025de3472140",
+      "schedule": "2022-11-30T12:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.558295-03:00",
       "updatedAt": "2022-10-23T20:33:08.558295-03:00",
       "deletedAt": null,
       "id": "48c3aab0-2b0a-4e41-ae6b-db931aa7129a",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.192604-03:00",
         "updatedAt": "2022-10-23T20:33:08.192604-03:00",
         "deletedAt": null,
@@ -1033,8 +1033,8 @@
         "namePTBR": "Alemanha",
         "abbreviation": "ALE"
       },
-      "TeamAID": "a4bc9834-efe1-4d90-8ed8-baae205f670d",
-      "TeamB": {
+      "teamAID": "a4bc9834-efe1-4d90-8ed8-baae205f670d",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.199511-03:00",
         "updatedAt": "2022-10-23T20:33:08.199511-03:00",
         "deletedAt": null,
@@ -1044,15 +1044,15 @@
         "namePTBR": "Japão",
         "abbreviation": "JAP"
       },
-      "TeamBID": "4314ec88-956c-46f0-a379-575155963807",
-      "Schedule": "2022-11-23T10:00:00-03:00"
+      "teamBID": "4314ec88-956c-46f0-a379-575155963807",
+      "schedule": "2022-11-23T10:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.569007-03:00",
       "updatedAt": "2022-10-23T20:33:08.569007-03:00",
       "deletedAt": null,
       "id": "4099e7ca-74e8-4a90-84a0-e90c2791ab2a",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.179958-03:00",
         "updatedAt": "2022-10-23T20:33:08.179958-03:00",
         "deletedAt": null,
@@ -1062,8 +1062,8 @@
         "namePTBR": "Espanha",
         "abbreviation": "ESP"
       },
-      "TeamAID": "30a2af0a-04ae-48ca-befc-4d6635955427",
-      "TeamB": {
+      "teamAID": "30a2af0a-04ae-48ca-befc-4d6635955427",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.185428-03:00",
         "updatedAt": "2022-10-23T20:33:08.185428-03:00",
         "deletedAt": null,
@@ -1073,15 +1073,15 @@
         "namePTBR": "Costa Rica",
         "abbreviation": "CRC"
       },
-      "TeamBID": "5a77043d-3c6f-4504-bfa8-610bb16e3fdb",
-      "Schedule": "2022-11-23T13:00:00-03:00"
+      "teamBID": "5a77043d-3c6f-4504-bfa8-610bb16e3fdb",
+      "schedule": "2022-11-23T13:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.579892-03:00",
       "updatedAt": "2022-10-23T20:33:08.579892-03:00",
       "deletedAt": null,
       "id": "82792e22-9e99-4d77-9d41-dfa0cc3328fd",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.199511-03:00",
         "updatedAt": "2022-10-23T20:33:08.199511-03:00",
         "deletedAt": null,
@@ -1091,8 +1091,8 @@
         "namePTBR": "Japão",
         "abbreviation": "JAP"
       },
-      "TeamAID": "4314ec88-956c-46f0-a379-575155963807",
-      "TeamB": {
+      "teamAID": "4314ec88-956c-46f0-a379-575155963807",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.185428-03:00",
         "updatedAt": "2022-10-23T20:33:08.185428-03:00",
         "deletedAt": null,
@@ -1102,15 +1102,15 @@
         "namePTBR": "Costa Rica",
         "abbreviation": "CRC"
       },
-      "TeamBID": "5a77043d-3c6f-4504-bfa8-610bb16e3fdb",
-      "Schedule": "2022-11-27T07:00:00-03:00"
+      "teamBID": "5a77043d-3c6f-4504-bfa8-610bb16e3fdb",
+      "schedule": "2022-11-27T07:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.593911-03:00",
       "updatedAt": "2022-10-23T20:33:08.593911-03:00",
       "deletedAt": null,
       "id": "f27a06b4-65e5-42e8-a8f5-8a7cd33b9801",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.179958-03:00",
         "updatedAt": "2022-10-23T20:33:08.179958-03:00",
         "deletedAt": null,
@@ -1120,8 +1120,8 @@
         "namePTBR": "Espanha",
         "abbreviation": "ESP"
       },
-      "TeamAID": "30a2af0a-04ae-48ca-befc-4d6635955427",
-      "TeamB": {
+      "teamAID": "30a2af0a-04ae-48ca-befc-4d6635955427",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.192604-03:00",
         "updatedAt": "2022-10-23T20:33:08.192604-03:00",
         "deletedAt": null,
@@ -1131,15 +1131,15 @@
         "namePTBR": "Alemanha",
         "abbreviation": "ALE"
       },
-      "TeamBID": "a4bc9834-efe1-4d90-8ed8-baae205f670d",
-      "Schedule": "2022-11-27T16:00:00-03:00"
+      "teamBID": "a4bc9834-efe1-4d90-8ed8-baae205f670d",
+      "schedule": "2022-11-27T16:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.605734-03:00",
       "updatedAt": "2022-10-23T20:33:08.605734-03:00",
       "deletedAt": null,
       "id": "b3420fc0-4663-44ed-8718-497cdac46b62",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.199511-03:00",
         "updatedAt": "2022-10-23T20:33:08.199511-03:00",
         "deletedAt": null,
@@ -1149,8 +1149,8 @@
         "namePTBR": "Japão",
         "abbreviation": "JAP"
       },
-      "TeamAID": "4314ec88-956c-46f0-a379-575155963807",
-      "TeamB": {
+      "teamAID": "4314ec88-956c-46f0-a379-575155963807",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.179958-03:00",
         "updatedAt": "2022-10-23T20:33:08.179958-03:00",
         "deletedAt": null,
@@ -1160,15 +1160,15 @@
         "namePTBR": "Espanha",
         "abbreviation": "ESP"
       },
-      "TeamBID": "30a2af0a-04ae-48ca-befc-4d6635955427",
-      "Schedule": "2022-12-01T16:00:00-03:00"
+      "teamBID": "30a2af0a-04ae-48ca-befc-4d6635955427",
+      "schedule": "2022-12-01T16:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.620423-03:00",
       "updatedAt": "2022-10-23T20:33:08.620423-03:00",
       "deletedAt": null,
       "id": "ac55f416-968e-4812-b36d-f0ffeeec26ce",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.185428-03:00",
         "updatedAt": "2022-10-23T20:33:08.185428-03:00",
         "deletedAt": null,
@@ -1178,8 +1178,8 @@
         "namePTBR": "Costa Rica",
         "abbreviation": "CRC"
       },
-      "TeamAID": "5a77043d-3c6f-4504-bfa8-610bb16e3fdb",
-      "TeamB": {
+      "teamAID": "5a77043d-3c6f-4504-bfa8-610bb16e3fdb",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.192604-03:00",
         "updatedAt": "2022-10-23T20:33:08.192604-03:00",
         "deletedAt": null,
@@ -1189,15 +1189,15 @@
         "namePTBR": "Alemanha",
         "abbreviation": "ALE"
       },
-      "TeamBID": "a4bc9834-efe1-4d90-8ed8-baae205f670d",
-      "Schedule": "2022-12-01T16:00:00-03:00"
+      "teamBID": "a4bc9834-efe1-4d90-8ed8-baae205f670d",
+      "schedule": "2022-12-01T16:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.631308-03:00",
       "updatedAt": "2022-10-23T20:33:08.631308-03:00",
       "deletedAt": null,
       "id": "3ecac3c7-8f4d-4f57-8037-76ebdc1532c4",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.213576-03:00",
         "updatedAt": "2022-10-23T20:33:08.213576-03:00",
         "deletedAt": null,
@@ -1207,8 +1207,8 @@
         "namePTBR": "Marrocos",
         "abbreviation": "MAR"
       },
-      "TeamAID": "bf00b3f0-8801-4b57-a202-64f1905d245e",
-      "TeamB": {
+      "teamAID": "bf00b3f0-8801-4b57-a202-64f1905d245e",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.219202-03:00",
         "updatedAt": "2022-10-23T20:33:08.219202-03:00",
         "deletedAt": null,
@@ -1218,15 +1218,15 @@
         "namePTBR": "Croácia",
         "abbreviation": "CRO"
       },
-      "TeamBID": "b2d9a884-c7ed-457d-9bd9-9ee160428487",
-      "Schedule": "2022-11-23T07:00:00-03:00"
+      "teamBID": "b2d9a884-c7ed-457d-9bd9-9ee160428487",
+      "schedule": "2022-11-23T07:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.64354-03:00",
       "updatedAt": "2022-10-23T20:33:08.64354-03:00",
       "deletedAt": null,
       "id": "4c532a04-39d4-4b44-8c0f-47a8fb85bc2e",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.204694-03:00",
         "updatedAt": "2022-10-23T20:33:08.204694-03:00",
         "deletedAt": null,
@@ -1236,8 +1236,8 @@
         "namePTBR": "Bélgica",
         "abbreviation": "BEL"
       },
-      "TeamAID": "aceaf45d-109e-42b1-a446-90049bde9a62",
-      "TeamB": {
+      "teamAID": "aceaf45d-109e-42b1-a446-90049bde9a62",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.208804-03:00",
         "updatedAt": "2022-10-23T20:33:08.208804-03:00",
         "deletedAt": null,
@@ -1247,15 +1247,15 @@
         "namePTBR": "Canadá",
         "abbreviation": "CAN"
       },
-      "TeamBID": "90d1dd33-8bce-4be1-a8d1-3928299d477c",
-      "Schedule": "2022-11-23T16:00:00-03:00"
+      "teamBID": "90d1dd33-8bce-4be1-a8d1-3928299d477c",
+      "schedule": "2022-11-23T16:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.655268-03:00",
       "updatedAt": "2022-10-23T20:33:08.655268-03:00",
       "deletedAt": null,
       "id": "982d6ef9-3ec0-4d70-a5dd-efca1f4f533b",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.204694-03:00",
         "updatedAt": "2022-10-23T20:33:08.204694-03:00",
         "deletedAt": null,
@@ -1265,8 +1265,8 @@
         "namePTBR": "Bélgica",
         "abbreviation": "BEL"
       },
-      "TeamAID": "aceaf45d-109e-42b1-a446-90049bde9a62",
-      "TeamB": {
+      "teamAID": "aceaf45d-109e-42b1-a446-90049bde9a62",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.213576-03:00",
         "updatedAt": "2022-10-23T20:33:08.213576-03:00",
         "deletedAt": null,
@@ -1276,15 +1276,15 @@
         "namePTBR": "Marrocos",
         "abbreviation": "MAR"
       },
-      "TeamBID": "bf00b3f0-8801-4b57-a202-64f1905d245e",
-      "Schedule": "2022-11-27T10:00:00-03:00"
+      "teamBID": "bf00b3f0-8801-4b57-a202-64f1905d245e",
+      "schedule": "2022-11-27T10:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.665346-03:00",
       "updatedAt": "2022-10-23T20:33:08.665346-03:00",
       "deletedAt": null,
       "id": "875f20b4-ffd5-4dce-88a8-64eb8d83f167",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.219202-03:00",
         "updatedAt": "2022-10-23T20:33:08.219202-03:00",
         "deletedAt": null,
@@ -1294,8 +1294,8 @@
         "namePTBR": "Croácia",
         "abbreviation": "CRO"
       },
-      "TeamAID": "b2d9a884-c7ed-457d-9bd9-9ee160428487",
-      "TeamB": {
+      "teamAID": "b2d9a884-c7ed-457d-9bd9-9ee160428487",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.208804-03:00",
         "updatedAt": "2022-10-23T20:33:08.208804-03:00",
         "deletedAt": null,
@@ -1305,15 +1305,15 @@
         "namePTBR": "Canadá",
         "abbreviation": "CAN"
       },
-      "TeamBID": "90d1dd33-8bce-4be1-a8d1-3928299d477c",
-      "Schedule": "2022-11-27T13:00:00-03:00"
+      "teamBID": "90d1dd33-8bce-4be1-a8d1-3928299d477c",
+      "schedule": "2022-11-27T13:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.678808-03:00",
       "updatedAt": "2022-10-23T20:33:08.678808-03:00",
       "deletedAt": null,
       "id": "e5b8018d-6a09-444e-9dd2-9a028c802b58",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.219202-03:00",
         "updatedAt": "2022-10-23T20:33:08.219202-03:00",
         "deletedAt": null,
@@ -1323,8 +1323,8 @@
         "namePTBR": "Croácia",
         "abbreviation": "CRO"
       },
-      "TeamAID": "b2d9a884-c7ed-457d-9bd9-9ee160428487",
-      "TeamB": {
+      "teamAID": "b2d9a884-c7ed-457d-9bd9-9ee160428487",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.204694-03:00",
         "updatedAt": "2022-10-23T20:33:08.204694-03:00",
         "deletedAt": null,
@@ -1334,15 +1334,15 @@
         "namePTBR": "Bélgica",
         "abbreviation": "BEL"
       },
-      "TeamBID": "aceaf45d-109e-42b1-a446-90049bde9a62",
-      "Schedule": "2022-12-01T12:00:00-03:00"
+      "teamBID": "aceaf45d-109e-42b1-a446-90049bde9a62",
+      "schedule": "2022-12-01T12:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.691476-03:00",
       "updatedAt": "2022-10-23T20:33:08.691476-03:00",
       "deletedAt": null,
       "id": "8ea8daf7-159f-4f72-8b63-1bfb6cf78885",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.208804-03:00",
         "updatedAt": "2022-10-23T20:33:08.208804-03:00",
         "deletedAt": null,
@@ -1352,8 +1352,8 @@
         "namePTBR": "Canadá",
         "abbreviation": "CAN"
       },
-      "TeamAID": "90d1dd33-8bce-4be1-a8d1-3928299d477c",
-      "TeamB": {
+      "teamAID": "90d1dd33-8bce-4be1-a8d1-3928299d477c",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.213576-03:00",
         "updatedAt": "2022-10-23T20:33:08.213576-03:00",
         "deletedAt": null,
@@ -1363,15 +1363,15 @@
         "namePTBR": "Marrocos",
         "abbreviation": "MAR"
       },
-      "TeamBID": "bf00b3f0-8801-4b57-a202-64f1905d245e",
-      "Schedule": "2022-12-01T12:00:00-03:00"
+      "teamBID": "bf00b3f0-8801-4b57-a202-64f1905d245e",
+      "schedule": "2022-12-01T12:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.702638-03:00",
       "updatedAt": "2022-10-23T20:33:08.702638-03:00",
       "deletedAt": null,
       "id": "401b535b-2f1e-450d-8d66-0ac901283506",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.233656-03:00",
         "updatedAt": "2022-10-23T20:33:08.233656-03:00",
         "deletedAt": null,
@@ -1381,8 +1381,8 @@
         "namePTBR": "Suíça",
         "abbreviation": "SUI"
       },
-      "TeamAID": "ac8e2c53-edc9-4fdc-8db1-2de2b743eac0",
-      "TeamB": {
+      "teamAID": "ac8e2c53-edc9-4fdc-8db1-2de2b743eac0",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.239426-03:00",
         "updatedAt": "2022-10-23T20:33:08.239426-03:00",
         "deletedAt": null,
@@ -1392,15 +1392,15 @@
         "namePTBR": "Camarões",
         "abbreviation": "CAM"
       },
-      "TeamBID": "b973178a-2d04-4df3-b600-825d95486b6b",
-      "Schedule": "2022-11-24T07:00:00-03:00"
+      "teamBID": "b973178a-2d04-4df3-b600-825d95486b6b",
+      "schedule": "2022-11-24T07:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.715639-03:00",
       "updatedAt": "2022-10-23T20:33:08.715639-03:00",
       "deletedAt": null,
       "id": "9a6ffe4d-c478-4c8b-916a-65793c264a8b",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.224595-03:00",
         "updatedAt": "2022-10-23T20:33:08.224595-03:00",
         "deletedAt": null,
@@ -1410,8 +1410,8 @@
         "namePTBR": "Brasil",
         "abbreviation": "BRA"
       },
-      "TeamAID": "2e9fe363-2175-48e9-8b9a-9690178896c3",
-      "TeamB": {
+      "teamAID": "2e9fe363-2175-48e9-8b9a-9690178896c3",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.229115-03:00",
         "updatedAt": "2022-10-23T20:33:08.229115-03:00",
         "deletedAt": null,
@@ -1421,15 +1421,15 @@
         "namePTBR": "Sérvia",
         "abbreviation": "SRV"
       },
-      "TeamBID": "c2b4a742-5615-458d-ace2-d51da8e76d00",
-      "Schedule": "2022-11-24T16:00:00-03:00"
+      "teamBID": "c2b4a742-5615-458d-ace2-d51da8e76d00",
+      "schedule": "2022-11-24T16:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.726861-03:00",
       "updatedAt": "2022-10-23T20:33:08.726861-03:00",
       "deletedAt": null,
       "id": "f476625b-51c2-42b0-bf11-c1b9c236a576",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.239426-03:00",
         "updatedAt": "2022-10-23T20:33:08.239426-03:00",
         "deletedAt": null,
@@ -1439,8 +1439,8 @@
         "namePTBR": "Camarões",
         "abbreviation": "CAM"
       },
-      "TeamAID": "b973178a-2d04-4df3-b600-825d95486b6b",
-      "TeamB": {
+      "teamAID": "b973178a-2d04-4df3-b600-825d95486b6b",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.229115-03:00",
         "updatedAt": "2022-10-23T20:33:08.229115-03:00",
         "deletedAt": null,
@@ -1450,15 +1450,15 @@
         "namePTBR": "Sérvia",
         "abbreviation": "SRV"
       },
-      "TeamBID": "c2b4a742-5615-458d-ace2-d51da8e76d00",
-      "Schedule": "2022-11-28T07:00:00-03:00"
+      "teamBID": "c2b4a742-5615-458d-ace2-d51da8e76d00",
+      "schedule": "2022-11-28T07:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.737236-03:00",
       "updatedAt": "2022-10-23T20:33:08.737236-03:00",
       "deletedAt": null,
       "id": "ba2acfd3-4dd2-4cd8-9c63-cdbdb8a1230c",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.224595-03:00",
         "updatedAt": "2022-10-23T20:33:08.224595-03:00",
         "deletedAt": null,
@@ -1468,8 +1468,8 @@
         "namePTBR": "Brasil",
         "abbreviation": "BRA"
       },
-      "TeamAID": "2e9fe363-2175-48e9-8b9a-9690178896c3",
-      "TeamB": {
+      "teamAID": "2e9fe363-2175-48e9-8b9a-9690178896c3",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.233656-03:00",
         "updatedAt": "2022-10-23T20:33:08.233656-03:00",
         "deletedAt": null,
@@ -1479,15 +1479,15 @@
         "namePTBR": "Suíça",
         "abbreviation": "SUI"
       },
-      "TeamBID": "ac8e2c53-edc9-4fdc-8db1-2de2b743eac0",
-      "Schedule": "2022-11-28T13:00:00-03:00"
+      "teamBID": "ac8e2c53-edc9-4fdc-8db1-2de2b743eac0",
+      "schedule": "2022-11-28T13:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.750059-03:00",
       "updatedAt": "2022-10-23T20:33:08.750059-03:00",
       "deletedAt": null,
       "id": "bdb15cd5-cf3a-48ab-b293-7291e698e06e",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.229115-03:00",
         "updatedAt": "2022-10-23T20:33:08.229115-03:00",
         "deletedAt": null,
@@ -1497,8 +1497,8 @@
         "namePTBR": "Sérvia",
         "abbreviation": "SRV"
       },
-      "TeamAID": "c2b4a742-5615-458d-ace2-d51da8e76d00",
-      "TeamB": {
+      "teamAID": "c2b4a742-5615-458d-ace2-d51da8e76d00",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.233656-03:00",
         "updatedAt": "2022-10-23T20:33:08.233656-03:00",
         "deletedAt": null,
@@ -1508,15 +1508,15 @@
         "namePTBR": "Suíça",
         "abbreviation": "SUI"
       },
-      "TeamBID": "ac8e2c53-edc9-4fdc-8db1-2de2b743eac0",
-      "Schedule": "2022-12-02T16:00:00-03:00"
+      "teamBID": "ac8e2c53-edc9-4fdc-8db1-2de2b743eac0",
+      "schedule": "2022-12-02T16:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.760248-03:00",
       "updatedAt": "2022-10-23T20:33:08.760248-03:00",
       "deletedAt": null,
       "id": "ded4aedf-a41f-407f-8137-8d1fd1f09328",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.239426-03:00",
         "updatedAt": "2022-10-23T20:33:08.239426-03:00",
         "deletedAt": null,
@@ -1526,8 +1526,8 @@
         "namePTBR": "Camarões",
         "abbreviation": "CAM"
       },
-      "TeamAID": "b973178a-2d04-4df3-b600-825d95486b6b",
-      "TeamB": {
+      "teamAID": "b973178a-2d04-4df3-b600-825d95486b6b",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.224595-03:00",
         "updatedAt": "2022-10-23T20:33:08.224595-03:00",
         "deletedAt": null,
@@ -1537,15 +1537,15 @@
         "namePTBR": "Brasil",
         "abbreviation": "BRA"
       },
-      "TeamBID": "2e9fe363-2175-48e9-8b9a-9690178896c3",
-      "Schedule": "2022-12-02T16:00:00-03:00"
+      "teamBID": "2e9fe363-2175-48e9-8b9a-9690178896c3",
+      "schedule": "2022-12-02T16:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.773305-03:00",
       "updatedAt": "2022-10-23T20:33:08.773305-03:00",
       "deletedAt": null,
       "id": "8cc739fb-259b-4bf0-b985-c53cf6a12658",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.253726-03:00",
         "updatedAt": "2022-10-23T20:33:08.253726-03:00",
         "deletedAt": null,
@@ -1555,8 +1555,8 @@
         "namePTBR": "Uruguai",
         "abbreviation": "URU"
       },
-      "TeamAID": "e9873836-36d1-4164-aa2d-8a725b2acdf2",
-      "TeamB": {
+      "teamAID": "e9873836-36d1-4164-aa2d-8a725b2acdf2",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.259291-03:00",
         "updatedAt": "2022-10-23T20:33:08.259291-03:00",
         "deletedAt": null,
@@ -1566,15 +1566,15 @@
         "namePTBR": "Coreia do Sul",
         "abbreviation": "COR"
       },
-      "TeamBID": "89c3cd89-e360-4ed6-bd1b-72311e296209",
-      "Schedule": "2022-11-24T10:00:00-03:00"
+      "teamBID": "89c3cd89-e360-4ed6-bd1b-72311e296209",
+      "schedule": "2022-11-24T10:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.784776-03:00",
       "updatedAt": "2022-10-23T20:33:08.784776-03:00",
       "deletedAt": null,
       "id": "c3ae5bd9-4f8a-438b-adfd-42bc898bf908",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.243707-03:00",
         "updatedAt": "2022-10-23T20:33:08.243707-03:00",
         "deletedAt": null,
@@ -1584,8 +1584,8 @@
         "namePTBR": "Portugal",
         "abbreviation": "POR"
       },
-      "TeamAID": "17a5a8fd-b62a-47eb-a4d4-33fcb9987ba3",
-      "TeamB": {
+      "teamAID": "17a5a8fd-b62a-47eb-a4d4-33fcb9987ba3",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.249002-03:00",
         "updatedAt": "2022-10-23T20:33:08.249002-03:00",
         "deletedAt": null,
@@ -1595,15 +1595,15 @@
         "namePTBR": "Gana",
         "abbreviation": "GAN"
       },
-      "TeamBID": "95496dff-18bb-4778-810d-dcaffef4b0f7",
-      "Schedule": "2022-11-24T13:00:00-03:00"
+      "teamBID": "95496dff-18bb-4778-810d-dcaffef4b0f7",
+      "schedule": "2022-11-24T13:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.795998-03:00",
       "updatedAt": "2022-10-23T20:33:08.795998-03:00",
       "deletedAt": null,
       "id": "3a00a813-b39f-48f3-b6d4-d973ba7518f7",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.259291-03:00",
         "updatedAt": "2022-10-23T20:33:08.259291-03:00",
         "deletedAt": null,
@@ -1613,8 +1613,8 @@
         "namePTBR": "Coreia do Sul",
         "abbreviation": "COR"
       },
-      "TeamAID": "89c3cd89-e360-4ed6-bd1b-72311e296209",
-      "TeamB": {
+      "teamAID": "89c3cd89-e360-4ed6-bd1b-72311e296209",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.249002-03:00",
         "updatedAt": "2022-10-23T20:33:08.249002-03:00",
         "deletedAt": null,
@@ -1624,15 +1624,15 @@
         "namePTBR": "Gana",
         "abbreviation": "GAN"
       },
-      "TeamBID": "95496dff-18bb-4778-810d-dcaffef4b0f7",
-      "Schedule": "2022-11-28T10:00:00-03:00"
+      "teamBID": "95496dff-18bb-4778-810d-dcaffef4b0f7",
+      "schedule": "2022-11-28T10:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.807699-03:00",
       "updatedAt": "2022-10-23T20:33:08.807699-03:00",
       "deletedAt": null,
       "id": "401abb58-5851-4d94-b22f-7ad407ed9d8a",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.243707-03:00",
         "updatedAt": "2022-10-23T20:33:08.243707-03:00",
         "deletedAt": null,
@@ -1642,8 +1642,8 @@
         "namePTBR": "Portugal",
         "abbreviation": "POR"
       },
-      "TeamAID": "17a5a8fd-b62a-47eb-a4d4-33fcb9987ba3",
-      "TeamB": {
+      "teamAID": "17a5a8fd-b62a-47eb-a4d4-33fcb9987ba3",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.253726-03:00",
         "updatedAt": "2022-10-23T20:33:08.253726-03:00",
         "deletedAt": null,
@@ -1653,15 +1653,15 @@
         "namePTBR": "Uruguai",
         "abbreviation": "URU"
       },
-      "TeamBID": "e9873836-36d1-4164-aa2d-8a725b2acdf2",
-      "Schedule": "2022-11-28T16:00:00-03:00"
+      "teamBID": "e9873836-36d1-4164-aa2d-8a725b2acdf2",
+      "schedule": "2022-11-28T16:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.818786-03:00",
       "updatedAt": "2022-10-23T20:33:08.818786-03:00",
       "deletedAt": null,
       "id": "5e4af04c-0684-4918-99e6-3bcb4b9d42f1",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.249002-03:00",
         "updatedAt": "2022-10-23T20:33:08.249002-03:00",
         "deletedAt": null,
@@ -1671,8 +1671,8 @@
         "namePTBR": "Gana",
         "abbreviation": "GAN"
       },
-      "TeamAID": "95496dff-18bb-4778-810d-dcaffef4b0f7",
-      "TeamB": {
+      "teamAID": "95496dff-18bb-4778-810d-dcaffef4b0f7",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.253726-03:00",
         "updatedAt": "2022-10-23T20:33:08.253726-03:00",
         "deletedAt": null,
@@ -1682,15 +1682,15 @@
         "namePTBR": "Uruguai",
         "abbreviation": "URU"
       },
-      "TeamBID": "e9873836-36d1-4164-aa2d-8a725b2acdf2",
-      "Schedule": "2022-12-02T12:00:00-03:00"
+      "teamBID": "e9873836-36d1-4164-aa2d-8a725b2acdf2",
+      "schedule": "2022-12-02T12:00:00-03:00"
     },
     {
       "createdAt": "2022-10-23T20:33:08.828387-03:00",
       "updatedAt": "2022-10-23T20:33:08.828387-03:00",
       "deletedAt": null,
       "id": "d2c3b9dd-e36c-455d-8871-7c52a37e9860",
-      "TeamA": {
+      "teamA": {
         "createdAt": "2022-10-23T20:33:08.259291-03:00",
         "updatedAt": "2022-10-23T20:33:08.259291-03:00",
         "deletedAt": null,
@@ -1700,8 +1700,8 @@
         "namePTBR": "Coreia do Sul",
         "abbreviation": "COR"
       },
-      "TeamAID": "89c3cd89-e360-4ed6-bd1b-72311e296209",
-      "TeamB": {
+      "teamAID": "89c3cd89-e360-4ed6-bd1b-72311e296209",
+      "teamB": {
         "createdAt": "2022-10-23T20:33:08.243707-03:00",
         "updatedAt": "2022-10-23T20:33:08.243707-03:00",
         "deletedAt": null,
@@ -1711,8 +1711,8 @@
         "namePTBR": "Portugal",
         "abbreviation": "POR"
       },
-      "TeamBID": "17a5a8fd-b62a-47eb-a4d4-33fcb9987ba3",
-      "Schedule": "2022-12-02T12:00:00-03:00"
+      "teamBID": "17a5a8fd-b62a-47eb-a4d4-33fcb9987ba3",
+      "schedule": "2022-12-02T12:00:00-03:00"
     }
   ],
   "users": [
@@ -1721,6 +1721,12 @@
       "name": "Admin",
       "email": "admin@admin.com",
       "token": "d28e699f-82b1-4dc7-9b7f-e7065b9b7bd3"
+    },
+    {
+      "name": "Fabiano",
+      "email": "fabiano@gmail.com",
+      "token": "8b53e272-5c79-4783-8a17-e35c0a1aa083",
+      "id": "astOwUc"
     }
   ]
 }

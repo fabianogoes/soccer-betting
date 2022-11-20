@@ -1,7 +1,7 @@
 import { Environment } from '../../../environment'
 import { Api } from '../axios-config'
 
-interface IUserList {
+export interface IUserList {
   id: string
   name: string
   email: string

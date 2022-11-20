@@ -2,7 +2,14 @@ import { useEffect } from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 
 import { useDrawerContext } from '../shared/contexts'
-import { Dashboard, TeamList, TeamDetail } from '../pages'  
+import { 
+  Dashboard, 
+  TeamList, 
+  TeamDetail, 
+  UserList, 
+  UserDetail, 
+  MatchList
+} from '../pages'  
 
 export const AppRoutes = () => {
   const { setDrawerOptions } = useDrawerContext()
@@ -21,7 +28,7 @@ export const AppRoutes = () => {
       },
       {
         icon: 'stadium',
-        path: '/mathes',
+        path: '/matches',
         label: 'Jogos',
       },
       {
@@ -34,6 +41,11 @@ export const AppRoutes = () => {
         path: '/teams',
         label: 'Times e Grupos',
       },
+      {
+        icon: 'account_circle',
+        path: '/users',
+        label: 'Usuários',
+      },
     ])
   }, [])
 
@@ -42,6 +54,11 @@ export const AppRoutes = () => {
       <Route path="/dashboard" element={<Dashboard/>} />
       <Route path="/teams" element={<TeamList/>} />
       <Route path="/teams/detail/:id" element={<TeamDetail/>} />
+
+      <Route path="/users" element={<UserList/>} />
+      <Route path="/users/detail/:id" element={<UserDetail/>} />
+
+      <Route path="/matches" element={<MatchList/>} />
 
       <Route path="*" element={<Navigate to="/dashboard" />} />
     </Routes>

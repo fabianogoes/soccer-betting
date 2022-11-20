@@ -1,4 +1,3 @@
-import { Environment } from '../../../environment'
 import { Api } from '../axios-config'
 
 export interface ITeamList {
@@ -22,21 +21,45 @@ type ITeamWithTotalCount = {
   totalCount: number
 }
 
-const create = async (data: any): Promise<string | Error> => {
-  console.log(data)
-  return '123'
+export interface ITeam {
+  name: string
+  abbreviation: string
 }
 
-const updateById = async (id: string, data: any): Promise<string | Error> => {
-  console.log(data)
-  return id
+export type TeamsByGroup = {
+  group: string
+  teams: ITeam[]
 }
 
-const getAll = async (page = 1, filter = ''): Promise<ITeamWithTotalCount | Error> => {
-  console.log(`TeamsService:getAll(page=${page}, filter=${filter})`)
+const fetchListGroup = async (list: ITeamList[]): Promise<TeamsByGroup[] | Error> => {
   try {
-    const relativeUrl = `/teams?_page=${page}&_limit=${Environment.MAX_LINES}&name_like=${filter}`
-    const { data, headers } = await Api.get(relativeUrl)
+    let currentTeams: Array<ITeam> = []
+    let currentGroup = list[0].group
+    const finalList: TeamsByGroup[] = []
+
+    list.map((item) => {
+      
+      if (item.group !== currentGroup) {
+        finalList.push({group: currentGroup, teams: currentTeams})
+        
+        currentGroup = item.group
+        currentTeams = []
+      } 
+      currentTeams.push({name: item.namePTBR, abbreviation: item.abbreviation})
+
+    })
+    finalList.push({group: currentGroup, teams: currentTeams})
+
+    return finalList
+  } catch (error) {
+    return new Error((error as {message: string}).message || 'Erro no fetch de times por grupo.')
+  }
+  
+}
+
+const getAll = async (): Promise<ITeamWithTotalCount | Error> => {
+  try {
+    const { data, headers } = await Api.get('/teams')
 
     if (data) {
       return {
@@ -67,20 +90,8 @@ const getById = async (id: string): Promise<ITeamDetail | Error> => {
   }
 }
 
-const deleteById = async (id: string): Promise<ITeamDetail | Error> => {
-  try {
-    await Api.delete(`/teams/${id}`)
-  } catch (error) {
-    console.error(error)
-    return new Error((error as {message: string}).message || `Erro ao deletar o time: ${id}.`)
-  }
-}
-
-
 export const TeamsService = {
   getAll,
   getById,
-  deleteById,
-  create,
-  updateById,
+  fetchListGroup,
 }
