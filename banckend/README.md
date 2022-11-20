@@ -22,18 +22,18 @@
 - [ORM Gorm](https://gorm.io/index.html)
 
 ## Create and configuration project
-- [x] [Setup Golang](https://www.practical-go-lessons.com/chap-4-setup-your-dev-environment)  `mkdir world-cup && cd world-cup && go mod init world-cup`
+- [x] [Setup Golang](https://www.practical-go-lessons.com/chap-4-setup-your-dev-environment)  `mkdir soccer-betting && cd soccer-betting && go mod init soccer-betting`
 - [x] [Setup Environment Variables]() `go get github.com/spf13/viper`
 - [x] [Setup Web API](https://gin-gonic.com/docs/)  `go get -u github.com/gin-gonic/gin`
-- [x] [Setup Logger](https://github.com/uber-go/zap) `go mod init world-cup`
+- [x] [Setup Logger](https://github.com/uber-go/zap) `go mod init soccer-betting`
 - [x] [Setup Database/GORM](https://gorm.io/docs/index.html)
   - `go get -u gorm.io/gorm`
   - `go get -u gorm.io/driver/postgres`
 
 ## Setup development
 - Install Go
-- Clone project `git clone https://github.com/fabianogoes/world-cup && cd world-cup`
-- Download dependency `world-cup`
+- Clone project `git clone https://github.com/fabianogoes/soccer-betting && cd soccer-betting`
+- Download dependency `soccer-betting`
 - Let's Code!
 
 ## Structure

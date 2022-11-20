@@ -1,9 +1,9 @@
-package api
+package controller
 
 import (
 	"fmt"
 	"net/http"
-	"world-cup/domain/usecases"
+	"soccer-betting/domain/usecases"
 
 	"github.com/gin-gonic/gin"
 )

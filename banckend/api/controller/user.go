@@ -1,11 +1,11 @@
-package api
+package controller
 
 import (
 	"fmt"
 	"net/http"
+	"soccer-betting/api/dto"
+	"soccer-betting/domain/usecases"
 	"strconv"
-	"world-cup/api/dto"
-	"world-cup/domain/usecases"
 
 	"github.com/gin-gonic/gin"
 	uuid "github.com/satori/go.uuid"

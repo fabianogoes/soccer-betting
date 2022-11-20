@@ -1,10 +1,10 @@
-package configuration
+package initializers
 
 import (
 	"fmt"
 	"log"
+	"soccer-betting/domain/models"
 	"time"
-	"world-cup/domain/models"
 
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
@@ -17,6 +17,8 @@ var (
 )
 
 func SetupPostgres(config *Config) {
+	log.Println("Load Configurations...")
+
 	dsn := fmt.Sprintf("host=%s user=%s password=%s dbname=%s port=%s sslmode=disable TimeZone=America/Sao_Paulo",
 		config.DBHost, config.DBUserName, config.DBUserPassword, config.DBName, config.DBPort)
 

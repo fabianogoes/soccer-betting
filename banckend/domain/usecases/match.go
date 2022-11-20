@@ -2,7 +2,7 @@ package usecases
 
 import (
 	"fmt"
-	"world-cup/domain/models"
+	"soccer-betting/domain/models"
 
 	"gorm.io/gorm"
 )

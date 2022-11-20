@@ -1,4 +1,4 @@
-module world-cup
+module soccer-betting
 
 go 1.18
 

@@ -1,6 +1,6 @@
 package dto
 
-import "world-cup/domain/models"
+import "soccer-betting/domain/models"
 
 type UserRequest struct {
 	Name  string `json:"name"`
