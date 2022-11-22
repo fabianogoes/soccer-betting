@@ -1,20 +1,14 @@
+import { ITeamDetail } from './../teams/TeamsService';
 import { Api } from '../axios-config'
 
 export interface IMatchList {
   id: string
   schedule: string
-  teamA: {
-    name: string
-    namePTBR: string
-    group: string
-    abbreviation: string
-  }
-  teamB: {
-    name: string
-    namePTBR: string
-    group: string
-    abbreviation: string
-  }
+  teamA: ITeamDetail
+  teamAResult?: number
+  teamB: ITeamDetail
+  teamBResult?: number
+  finished?: boolean
 }
 
 export interface IMatchDetail {
@@ -27,20 +21,13 @@ export interface IMatchDetail {
   schedule: string
 }
 
-type IMatchWithTotalCount = {
-  data: IMatchList[]
-  totalCount: number
-}
-
-const getAll = async (): Promise<IMatchWithTotalCount | Error> => {
+const getAll = async (): Promise<IMatchList[] | Error> => {
   try {
-    const { data, headers } = await Api.get('/matches')
+    const { data } = await Api.get('/matches?_sort=schedule&_order=asc')
 
     if (data) {
-      return {
-        data,
-        totalCount: Number(headers['x-total-count']) || 0
-      }
+      console.log(data)
+      return data
     }
 
     return new Error('Erro na listagem de jogos.')

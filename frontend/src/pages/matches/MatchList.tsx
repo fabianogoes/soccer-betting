@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 import { 
-  Avatar,
   Chip,
   Divider,
+  Icon,
   LinearProgress, 
   Paper, 
   Table, 
@@ -10,9 +10,8 @@ import {
   TableCell, 
   TableContainer, 
   TableFooter, 
-  TableHead, 
   TableRow, 
-  TextField
+  TextField,
 } from '@mui/material'
 import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined'
 
@@ -21,9 +20,6 @@ import { LayoutBasePage } from '../../shared/layouts'
 import { useDebounce } from '../../shared/hooks'
 
 import { TeamFlagBox } from '../../shared/components/commons/TeamFlag'
-import { TeamGroupBox } from '../../shared/components/commons/TeamGroup'
-import { Box } from '@mui/system'
-import { useTheme } from '@emotion/react'
 
 export const MatchList: React.FC = () => {
   const { debounce } = useDebounce()
@@ -43,8 +39,7 @@ export const MatchList: React.FC = () => {
             alert(result.message)
             return
           } else {
-            console.log(result)
-            setRows(result.data)
+            setRows(result)
           }
   
         })
@@ -52,9 +47,21 @@ export const MatchList: React.FC = () => {
 
   }, [])
 
-  const theme = useTheme()
+
+  const formatDateTime = (date: string) => {
+    const dtFormatter = new Intl.DateTimeFormat('pt-BR', {
+      year: 'numeric', month: 'numeric', day: 'numeric',
+      hour: 'numeric', minute: 'numeric', second: 'numeric',
+      hour12: false,
+      timeZone: 'America/Sao_Paulo'
+    })
+
+    // return date
+    return dtFormatter.format(new Date(date))
+  }
+
   return (
-    <LayoutBasePage title="Listagem de Jogos">
+    <LayoutBasePage title="Jogos da fase de grupos">
 
       <TableContainer component={Paper} variant="outlined" sx={{ margin: 1, width: 'auto' }}>
         <Table>
@@ -65,49 +72,86 @@ export const MatchList: React.FC = () => {
               {rows.map((row) => (
                 <TableRow key={row.id}>
                   <TableCell align='center'>
+                    
                     <TeamFlagBox 
+                      toolTipTitle={row.teamA.name}
                       imgWidth='40%' 
-                      imgSrc={row.teamA.abbreviation} 
-                      imgAlt={row.teamA.abbreviation} 
+                      abbreviation={row.teamA.abbreviation} 
                     />
-                    <TextField 
-                      id="standard-basic" 
-                      inputProps={{min: 0, style: { textAlign: 'center' }}} 
-                      variant="outlined" 
-                      size='small' 
-                      disabled={true}
-                      defaultValue={0} 
-                    />
+
+                    {row.finished && 
+                      <TextField 
+                        sx={{m: 1}}
+                        inputProps={{readOnly: true, min: 0, style: { textAlign: 'center' }}} 
+                        size='small' 
+                        value={row.teamAResult}
+                        variant={ row.finished ? 'filled' : 'standard'} 
+                        color={ row.finished ? 'success' : 'warning' }
+                      />
+                    }   
+
+                    {!row.finished &&
+                      <Icon sx={{m: 1}}>alarm</Icon>
+                    }
+
                   </TableCell>
                   <TableCell align='center'>
                     {/* <Box width="100%" display="flex" alignItems="center" justifyContent="center"> */}
                     {/* <Avatar variant='rounded'>X</Avatar> */}
                     {/* </Box> */}
                     <Divider>
-                      <Chip label='X' />  
+                      {row.finished && 
+                        <Chip color='success' label='Jogo finalizado' icon={<Icon>task_alt</Icon>} /> 
+                      }                      
+                      {!row.finished && 
+                        <Chip icon={<Icon>alarm</Icon>} label='Aguardando confronto' /> 
+                      }                      
                     </Divider>
-                    <Chip 
-                      icon={<CalendarMonthOutlinedIcon />} 
-                      label={(new Date(row.schedule).toLocaleString()) + ' - GRUPO: ' + row.teamA.group} 
-                      variant='outlined'
-                      color='primary'
-                      sx={{m: 2}}
-                    /> 
+
+                    {row.finished && 
+                      <Chip 
+                        icon={<CalendarMonthOutlinedIcon />} 
+                        label={(formatDateTime(row.schedule)) + ' - GRUPO: ' + row.teamA.group} 
+                        variant='outlined'
+                        color='success'
+                        sx={{m: 2, textDecoration: 'line-through'}}
+                      />
+                    } 
+                    {!row.finished && 
+                      <Chip 
+                        icon={<CalendarMonthOutlinedIcon />} 
+                        label={(new Date(row.schedule).toLocaleString()) + ' - GRUPO: ' + row.teamA.group} 
+                        variant='outlined'
+                        sx={{m: 2}}
+                      />
+                    } 
+
+                    <Divider sx={{ display: 'none' }}>
+                      <Chip label={row.id}  />  
+                    </Divider>
+
                   </TableCell>
                   <TableCell align='center'>
                     <TeamFlagBox 
+                      toolTipTitle={row.teamB.name}
                       imgWidth='40%' 
-                      imgSrc={row.teamB.abbreviation} 
-                      imgAlt={row.teamB.abbreviation} 
+                      abbreviation={row.teamB.abbreviation} 
                     />
-                    <TextField 
-                      id="standard-basic" 
-                      inputProps={{min: 0, style: { textAlign: 'center' }}} 
-                      variant="outlined" 
-                      disabled={true}
-                      size='small' 
-                      defaultValue={0} 
-                    />
+
+                    {row.finished && 
+                      <TextField 
+                        sx={{m: 1}}
+                        inputProps={{readOnly: true, min: 0, style: { textAlign: 'center' }}} 
+                        size='small' 
+                        value={row.teamBResult}
+                        variant={ row.finished ? 'filled' : 'standard'} 
+                        color={ row.finished ? 'success' : 'warning' }
+                      />
+                    }
+
+                    {!row.finished &&
+                      <Icon sx={{m: 1}}>alarm</Icon>
+                    }
                   </TableCell>
                 </TableRow>
               ))}

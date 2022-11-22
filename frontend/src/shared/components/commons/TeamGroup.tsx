@@ -46,7 +46,6 @@ export const TeamGroupCard: React.FC<ITeamGroupCardProps> = ({
       <Grid container direction='column'>
         <Grid container item direction='row'>
           <Grid item xs={12} md={12}>
-            {/* <TeamGroupBox group={group} /> */}
             <Divider>
               <Chip sx={{fontSize: 20}} color='primary' label={'GRUPO: ' + group} />  
             </Divider>
@@ -61,8 +60,7 @@ export const TeamGroupCard: React.FC<ITeamGroupCardProps> = ({
               <Card variant="outlined">
                 <CardHeader title={team.name}/>
                 <CardContent>
-                  {/* <ImageListItemBar position='bottom' title={team.abbreviation} sx={{width: '100%'}} style={{marginLeft: 'auto', marginRight: 'auto'}} />            */}
-                  <TeamFlagBox imgWidth='50%' imgSrc={team.abbreviation} imgAlt={team.name}/>
+                  <TeamFlagBox imgWidth='50%' abbreviation={team.abbreviation} toolTipTitle={team.abbreviation} />
                 </CardContent>
               </Card>
             </Box>

@@ -4,7 +4,6 @@ export interface ITeamList {
   id: string
   name: string
   group: string
-  namePTBR: string
   abbreviation: string
 }
 
@@ -12,7 +11,6 @@ export interface ITeamDetail {
   id: string
   name: string
   group: string
-  namePTBR: string
   abbreviation: string
 }
 
@@ -45,7 +43,7 @@ const fetchListGroup = async (list: ITeamList[]): Promise<TeamsByGroup[] | Error
         currentGroup = item.group
         currentTeams = []
       } 
-      currentTeams.push({name: item.namePTBR, abbreviation: item.abbreviation})
+      currentTeams.push({name: item.name, abbreviation: item.abbreviation})
 
     })
     finalList.push({group: currentGroup, teams: currentTeams})

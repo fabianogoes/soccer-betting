@@ -16,7 +16,8 @@ export const Environment = {
   /**
    * Url base de consultado dos dados dessa aplicação backend
    */
-  URL_BASE: 'http://localhost:3333',
+  // URL_BASE: 'http://localhost:3333',
+  URL_BASE: 'http://localhost:8080',
   /**
    * Texto padrão para label de botão de novo registro
    */

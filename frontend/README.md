@@ -23,10 +23,12 @@
 - [Vite](https://vitejs.dev/guide/)
 - [TypeScript](https://www.typescriptlang.org/docs/)
 - [Material UI](https://mui.com/material-ui/getting-started/overview/)
+- [Material Icons](https://mui.com/material-ui/material-icons/)
 - [UnForm](https://unform-rocketseat.vercel.app/quick-start/)
 - [Json Server](https://github.com/typicode/json-server)
 - [Axios](https://github.com/axios/axios)
 - [UUID](https://github.com/uuidjs/uuid)
+- [React IMask Plugin](https://github.com/uNmAnNeR/imaskjs/tree/master/packages/react-imask)
 
 ## Json Server Mock Backend
 

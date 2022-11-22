@@ -1,4 +1,4 @@
-import { Box } from '@mui/material'
+import { Box, Tooltip } from '@mui/material'
 import { grey } from '@mui/material/colors'
 
 import SEN from './../../../assets/flags/SEN.png'
@@ -84,19 +84,31 @@ const flagMap: {[key: string]: string} = {
 }
 
 interface ITeamFlagProps {
-  imgSrc: string
-  imgAlt: string
+  toolTipTitle: string
+  abbreviation: string
   imgWidth: string
 }
 
 export const TeamFlagBox: React.FC<ITeamFlagProps> = ({
-  imgSrc,
-  imgAlt = 'Team Flag',
+  toolTipTitle,
+  abbreviation,
   imgWidth = '100%',
 }) => {
   return (
     <Box style={{ marginLeft: 'auto', marginRight: 'auto' }} width='50%'>
-      <img src={flagMap[imgSrc]} alt={imgAlt} width={imgWidth} style={{ border: `1px ${grey[300]} solid`, borderRadius: '50%' }}/>      
+
+      <Tooltip title={toolTipTitle}>
+        <img 
+          src={flagMap[abbreviation]} 
+          alt={abbreviation} 
+          width={imgWidth} 
+          style={{ 
+            border: `1px ${grey[300]} solid`, 
+            borderRadius: '50%' 
+          }}
+        /> 
+      </Tooltip>
+     
     </Box>
   )
 }

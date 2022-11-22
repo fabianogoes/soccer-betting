@@ -24,7 +24,7 @@ export const AppRoutes = () => {
       {
         icon: 'storage',
         path: '/bet',
-        label: 'Minha Aposta',
+        label: 'Aposta',
       },
       {
         icon: 'stadium',
@@ -39,7 +39,7 @@ export const AppRoutes = () => {
       {
         icon: 'groups',
         path: '/teams',
-        label: 'Times e Grupos',
+        label: 'Equipes',
       },
       {
         icon: 'account_circle',

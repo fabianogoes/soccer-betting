@@ -1,4 +1,4 @@
-import { Avatar, Divider, Drawer, Icon, List, ListItemButton, ListItemIcon, ListItemText, useMediaQuery, useTheme } from '@mui/material'
+import { Avatar, Divider, Drawer, Icon, List, ListItemButton, ListItemIcon, ListItemText, Typography, useMediaQuery, useTheme } from '@mui/material'
 import { useMatch, useNavigate, useResolvedPath } from 'react-router-dom'
 import { Box } from '@mui/system'
 
@@ -30,7 +30,7 @@ const ListItemLink: React.FC<IListItemLinkProps> = ({ to, icon, label, onClick }
   return (
     <ListItemButton selected={!!match} onClick={handleClick}>
       <ListItemIcon>
-        <Icon>{icon}</Icon>
+        <Icon color='primary'>{icon}</Icon>
       </ListItemIcon>
       <ListItemText primary={label} />
     </ListItemButton>
@@ -44,6 +44,7 @@ export const SideBar: React.FC<Props> = ({ children }) => {
   const { isDrawerOpen, drawerOptions, toggleDrawerOpen } = useDrawerContext()
   const { toggleTheme } = useAppThemeContext()
 
+
   return (
     <>
       <Drawer open={ isDrawerOpen } variant={smDown ? 'temporary' : 'permanent'} onClose={toggleDrawerOpen}>
@@ -51,10 +52,15 @@ export const SideBar: React.FC<Props> = ({ children }) => {
 
           <Box width="100%" height={theme.spacing(20)} display="flex" alignItems="center" justifyContent="center">
             <Avatar
-              sx={{ height: theme.spacing(12), width: theme.spacing(12) }}
+              sx={{ height: theme.spacing(12), width: theme.spacing(12), bgcolor: theme.palette.primary.main}}
               src="https://yt3.ggpht.com/grfYgQadT8iNg9WPb-jkrKB-9224y_DBDXAOtV4Yt7cyQmtR47J_453uveQOTDsp_dRSH851TMM=s108-c-k-c0x00ffffff-no-rj"
             />
           </Box>
+
+          <Box sx={{m: 1}} display="flex" alignItems="center" justifyContent="center">
+            <Typography mt={2}>Admin</Typography>
+          </Box>
+
 
           <Divider />
 
