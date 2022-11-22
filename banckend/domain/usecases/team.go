@@ -15,22 +15,25 @@ func NewTeamUseCase(db *gorm.DB) *TeamUseCase {
 	return &TeamUseCase{DB: db}
 }
 
-func (uc TeamUseCase) FindAll() *[]models.Team {
+func (uc TeamUseCase) FindAll() []models.Team {
 	teams := []models.Team{}
 
-	uc.DB.Find(&teams)
+	uc.DB.Order("id").Find(&teams)
+	for _, t := range teams {
+		fmt.Println(t)
+	}
 
-	return &teams
+	return teams
 }
 
-func (uc *TeamUseCase) FindById(id string) (error, *models.Team) {
+func (uc *TeamUseCase) FindById(id string) (*models.Team, error) {
 	var team models.Team
 
 	result := uc.DB.Where("id = ?", id).First(&team)
 	if result.RowsAffected == 0 {
-		return result.Error, nil
+		return nil, result.Error
 	}
 
 	fmt.Println("Team found")
-	return nil, &team
+	return &team, nil
 }

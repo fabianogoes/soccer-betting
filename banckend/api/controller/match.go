@@ -8,6 +8,16 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+type MatchResponse struct {
+	ID          uint         `json:"id"`
+	TeamA       TeamResponse `json:"teamA"`
+	TeamAResult int          `json:"teamAResult"`
+	TeamB       TeamResponse `json:"teamB"`
+	TeamBResult int          `json:"teamBResult"`
+	Schedule    string       `json:"schedule"`
+	Finished    bool         `json:"finished"`
+}
+
 type MatchApiHandler struct {
 	UseCase *usecases.MatchUseCase
 }
@@ -22,7 +32,34 @@ func (h MatchApiHandler) Routes(router *gin.Engine) {
 }
 
 func (h MatchApiHandler) findAll(c *gin.Context) {
-	c.JSONP(http.StatusOK, h.UseCase.FindAll())
+
+	listRepository := h.UseCase.FindAll()
+	listResponse := []MatchResponse{}
+	for _, model := range listRepository {
+		dto := MatchResponse{
+			ID: model.Model.ID,
+			TeamA: TeamResponse{
+				ID:           model.TeamA.Model.ID,
+				Name:         model.TeamA.NamePTBR,
+				Group:        model.TeamA.Group,
+				Abbreviation: model.TeamA.Abbreviation,
+			},
+			TeamAResult: model.TeamAResult,
+			TeamB: TeamResponse{
+				ID:           model.TeamB.Model.ID,
+				Name:         model.TeamB.NamePTBR,
+				Group:        model.TeamB.Group,
+				Abbreviation: model.TeamB.Abbreviation,
+			},
+			TeamBResult: model.TeamBResult,
+			// Schedule:    model.Schedule.Format("2006-01-02 15:04:05"),
+			Schedule: model.Schedule.UTC().Format("2006-01-02 15:04:05"),
+			Finished: model.Finished,
+		}
+		listResponse = append(listResponse, dto)
+	}
+
+	c.JSONP(http.StatusOK, listResponse)
 }
 
 func (h MatchApiHandler) findById(c *gin.Context) {

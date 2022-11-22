@@ -19,6 +19,7 @@
     - [Backend](#backend)
     - [Frontend](#frontend)
     - [Mock Backend](#mock-backend)
+  - [References](#references)
 
 
 ## Stack
@@ -57,3 +58,13 @@ yarn # install dependencies
 yarn mock # running mock backend
 yarn dev # rinning frontend project
 ```
+
+## References
+- [How to Setup Golang GORM RESTful API Project with Postgres](https://codevoweb.com/setup-golang-gorm-restful-api-project-with-postgres)
+- [JWT Authentication in Go with Gin and Gorm](https://youtu.be/ma7rUS_vW9M)
+- [How to organize a Go web app](https://youtu.be/pbcTa-a3LBw)
+- [Uber Go style guide](https://github.com/uber-go/guide/blob/master/style.md)
+- [World Cup Qatar 2022](https://www.fifa.com/fifaplus/en/articles/qatar-2022-all-qualified-teams-groups-dates-match-schedule-tickets-more)
+- [Database Handling with Golang Gorm (CRUD Handling)](https://dev.to/yanoandri/database-handling-with-golang-gorm-crud-handling-4c66)
+- [Qatar horarios fase de grupos](https://www.jogosdacopa.net/#/qatar-horarios-fase-de-grupos)
+- [Qatar matches and schedules](https://digitalhub.fifa.com/m/538276bde2718fe6/original/2022fwc_qatar_match_schedule_v34b_11082022_EN_international-use.pdf)

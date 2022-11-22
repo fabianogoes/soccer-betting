@@ -8,6 +8,13 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+type TeamResponse struct {
+	ID           uint   `json:"id"`
+	Name         string `json:"name"`
+	Group        string `json:"group"`
+	Abbreviation string `json:"abbreviation"`
+}
+
 type TeamApiHandler struct {
 	UseCase *usecases.TeamUseCase
 }
@@ -22,7 +29,21 @@ func (h TeamApiHandler) Routes(router *gin.Engine) {
 }
 
 func (h TeamApiHandler) findAll(c *gin.Context) {
-	c.JSONP(http.StatusOK, h.UseCase.FindAll())
+
+	listRepository := h.UseCase.FindAll()
+	listResponse := []TeamResponse{}
+	for _, model := range listRepository {
+		dto := TeamResponse{
+			ID:           model.Model.ID,
+			Name:         model.NamePTBR,
+			Group:        model.Group,
+			Abbreviation: model.Abbreviation,
+		}
+		fmt.Println(dto)
+		listResponse = append(listResponse, dto)
+	}
+
+	c.JSONP(http.StatusOK, listResponse)
 }
 
 func (h TeamApiHandler) findById(c *gin.Context) {

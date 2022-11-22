@@ -15,15 +15,15 @@ func NewMatchUseCase(db *gorm.DB) *MatchUseCase {
 	return &MatchUseCase{DB: db}
 }
 
-func (uc MatchUseCase) FindAll() *[]models.Match {
+func (uc MatchUseCase) FindAll() []models.Match {
 	matches := []models.Match{}
 
-	err := uc.DB.Model(&models.Match{}).Preload("TeamA").Preload("TeamB").Find(&matches).Error
+	err := uc.DB.Order("schedule").Model(&models.Match{}).Preload("TeamA").Preload("TeamB").Find(&matches).Error
 	if err != nil {
 		fmt.Errorf("Gind Match Error: %v", err)
 	}
 
-	return &matches
+	return matches
 }
 
 func (uc *MatchUseCase) FindById(id string) (error, *models.Match) {

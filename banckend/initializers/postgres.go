@@ -3,6 +3,7 @@ package initializers
 import (
 	"fmt"
 	"log"
+	"os"
 	"soccer-betting/domain/models"
 	"time"
 
@@ -16,9 +17,15 @@ var (
 	err error
 )
 
-func SetupPostgres(config *Config) {
-	log.Println("Load Configurations...")
+func init() {
+	os.Setenv("TZ", "America/Sao_Paulo")
 
+	time.Local, _ = time.LoadLocation("America/Sao_Paulo")
+	fmt.Println("Tempo SP:", time.Now())
+}
+
+func SetupPostgres(config *Config) {
+	log.Println("Setup Postgress...")
 	dsn := fmt.Sprintf("host=%s user=%s password=%s dbname=%s port=%s sslmode=disable TimeZone=America/Sao_Paulo",
 		config.DBHost, config.DBUserName, config.DBUserPassword, config.DBName, config.DBPort)
 
@@ -31,15 +38,21 @@ func SetupPostgres(config *Config) {
 		log.Panic("Error to connect Postgres Database - ", err)
 	}
 
+	DB.Session(&gorm.Session{
+		NowFunc: func() time.Time {
+			return time.Now().Local()
+		},
+	})
+
 	DB.AutoMigrate(
 		&models.User{},
 		&models.Team{},
 		&models.Match{},
 	)
 
-	usersAutoPopulate()
-	temsAutoPopulate()
-	matchesAutoPopulate()
+	// usersAutoPopulate()
+	// temsAutoPopulate()
+	// matchesAutoPopulate()
 }
 
 func usersAutoPopulate() {
