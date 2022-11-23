@@ -3,17 +3,12 @@ package controller
 import (
 	"fmt"
 	"net/http"
+	"soccer-betting/api/dto"
 	"soccer-betting/domain/usecases"
+	"strconv"
 
 	"github.com/gin-gonic/gin"
 )
-
-type TeamResponse struct {
-	ID           uint   `json:"id"`
-	Name         string `json:"name"`
-	Group        string `json:"group"`
-	Abbreviation string `json:"abbreviation"`
-}
 
 type TeamApiHandler struct {
 	UseCase *usecases.TeamUseCase
@@ -29,31 +24,23 @@ func (h TeamApiHandler) Routes(router *gin.Engine) {
 }
 
 func (h TeamApiHandler) findAll(c *gin.Context) {
-
 	listRepository := h.UseCase.FindAll()
-	listResponse := []TeamResponse{}
+	listResponse := []dto.TeamResponse{}
 	for _, model := range listRepository {
-		dto := TeamResponse{
-			ID:           model.Model.ID,
-			Name:         model.NamePTBR,
-			Group:        model.Group,
-			Abbreviation: model.Abbreviation,
-		}
-		fmt.Println(dto)
-		listResponse = append(listResponse, dto)
+		listResponse = append(listResponse, dto.ToTeamResponse(&model))
 	}
 
 	c.JSONP(http.StatusOK, listResponse)
 }
 
 func (h TeamApiHandler) findById(c *gin.Context) {
-	id := c.Params.ByName("id")
+	id, _ := strconv.ParseUint(c.Params.ByName("id"), 10, 64)
 
-	err, team := h.UseCase.FindById(id)
+	model, err := h.UseCase.FindById(id)
 	if err != nil {
-		c.JSON(http.StatusNotFound, gin.H{"message": fmt.Sprintf("Team not found with id: %s", id)})
+		c.JSON(http.StatusNotFound, gin.H{"message": fmt.Sprintf("Team not found with id: %d", id)})
 		return
 	}
 
-	c.JSONP(http.StatusOK, team)
+	c.JSONP(http.StatusOK, dto.ToTeamResponse(model))
 }

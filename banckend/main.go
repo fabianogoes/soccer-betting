@@ -13,12 +13,14 @@ func init() {
 
 	initializers.SetupPostgres(&config)
 
+	logger := initializers.SetupLogger(&config)
+
 	// Dependency Injection UseCases
 	initializers.SetupApi(
 		&config,
 		usecases.NewUserUseCase(initializers.DB),
 		usecases.NewTeamUseCase(initializers.DB),
-		usecases.NewMatchUseCase(initializers.DB),
+		usecases.NewMatchUseCase(initializers.DB, logger),
 	)
 }
 

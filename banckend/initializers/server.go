@@ -24,7 +24,7 @@ func SetupHTTPServer(config *Config, routers ...Router) *http.Server {
 		handler.Routes(r)
 	}
 
-	logger.Infof("Web server running with configuration %v", config)
+	logger.Infof("Web server running with environment: ", config.Enviroment)
 	return &http.Server{
 		Addr:         config.ServerPort,
 		Handler:      r,

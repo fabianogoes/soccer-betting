@@ -26,7 +26,7 @@ func (uc TeamUseCase) FindAll() []models.Team {
 	return teams
 }
 
-func (uc *TeamUseCase) FindById(id string) (*models.Team, error) {
+func (uc *TeamUseCase) FindById(id uint64) (*models.Team, error) {
 	var team models.Team
 
 	result := uc.DB.Where("id = ?", id).First(&team)
