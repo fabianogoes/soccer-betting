@@ -3,6 +3,7 @@ import {
   Chip,
   Divider,
   Icon,
+  IconButton,
   LinearProgress, 
   Paper, 
   Table, 
@@ -20,9 +21,11 @@ import { LayoutBasePage } from '../../shared/layouts'
 import { useDebounce } from '../../shared/hooks'
 
 import { TeamFlagBox } from '../../shared/components/commons/TeamFlag'
+import { useNavigate } from 'react-router-dom'
 
 export const MatchList: React.FC = () => {
   const { debounce } = useDebounce()
+  const navigate = useNavigate()
 
   const [rows, setRows] = useState<IMatchList[]>([])
   const [isLoading, setIsLoading] = useState(true)
@@ -101,7 +104,7 @@ export const MatchList: React.FC = () => {
                     {/* </Box> */}
                     <Divider>
                       {row.finished && 
-                        <Chip color='success' label='Jogo finalizado' icon={<Icon>task_alt</Icon>} /> 
+                        <Chip color='success' label='Jogo finalizado' icon={<Icon>task_alt</Icon>} />                                                  
                       }                      
                       {!row.finished && 
                         <Chip icon={<Icon>alarm</Icon>} label='Aguardando confronto' /> 
@@ -126,9 +129,10 @@ export const MatchList: React.FC = () => {
                       />
                     } 
 
-                    <Divider sx={{ display: 'none' }}>
-                      <Chip label={row.id}  />  
-                    </Divider>
+                    <br />
+                    <IconButton size="small" onClick={() => navigate(`/matches/detail/${row.id}`)}>
+                      <Icon color='success'>edit</Icon>
+                    </IconButton> 
 
                   </TableCell>
                   <TableCell align='center'>

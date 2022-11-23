@@ -8,7 +8,8 @@ import {
   TeamDetail, 
   UserList, 
   UserDetail, 
-  MatchList
+  MatchList,
+  MatchDetail
 } from '../pages'  
 
 export const AppRoutes = () => {
@@ -59,6 +60,7 @@ export const AppRoutes = () => {
       <Route path="/users/detail/:id" element={<UserDetail/>} />
 
       <Route path="/matches" element={<MatchList/>} />
+      <Route path="/matches/detail/:id" element={<MatchDetail/>} />
 
       <Route path="*" element={<Navigate to="/dashboard" />} />
     </Routes>

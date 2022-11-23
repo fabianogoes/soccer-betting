@@ -12,13 +12,29 @@ export interface IMatchList {
 }
 
 export interface IMatchDetail {
-  id: string
-  teamAID: string
-  teamAAbbreviation: string
-  teamBID: string
-  teamBAbbreviation: string
-  group: string
+  id: number
+  teamA: {
+    id: number
+    name: string
+    group: string
+    abbreviation: string
+  }
+  teamAResult: number
+  teamB: {
+    id: number
+    name: string
+    group: string
+    abbreviation: string
+  }
+  teamBResult: number
   schedule: string
+  finished: boolean
+}
+
+export interface IMatchUpdate {
+  teamAResult: number
+  teamBResult: number
+  finished: boolean
 }
 
 const getAll = async (): Promise<IMatchList[] | Error> => {
@@ -37,7 +53,7 @@ const getAll = async (): Promise<IMatchList[] | Error> => {
   }
 }
 
-const getById = async (id: string): Promise<IMatchDetail | Error> => {
+const getById = async (id: number): Promise<IMatchDetail | Error> => {
   try {
     const { data } = await Api.get(`/matches/${id}`)
 
@@ -52,8 +68,27 @@ const getById = async (id: string): Promise<IMatchDetail | Error> => {
   }
 }
 
+const updateById = async (id: number, requestMatch: IMatchUpdate): Promise<IMatchDetail | Error> => {
+  try {
+    console.log('MatchesService.updateById...')
+    console.log(`id = ${id}`)
+    console.log(requestMatch)
+    const { data } = await Api.put(`/matches/${id}`, requestMatch)
+
+    if (data) {
+      return data
+    }
+
+    return new Error(`Erro ao atualizar o jogo: ${id}`)
+  } catch (error) {
+    console.error(error)
+    return new Error((error as {message: string}).message || `Erro ao atualizar o jogo: ${id}`)
+  }
+}
+
 
 export const MatchesService = {
   getAll,
   getById,
+  updateById,
 }
